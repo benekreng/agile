@@ -1,8 +1,57 @@
-###Overview
-+ Describe the purpose, scope, and organization of the Functional Specification.
+### Overview
+The purpose of this document is to outline overarching purpose of the software proposed for the ASP CM2020 UoL class. The project will have the following scope
 
-###Product description
-+ Describe briefly why the software (or upgrade) is being developed, and list the most important features and capabilities.
++ The software will take the users data by file upload  and then generate graphics to display the data back to the user. The software will proccess the data and ensure any data corruptions / omissions are processed without crashing the core program. 
+
++ The software will utilise the external modules charts.js and p5.js to create the graphics required. The user will have the option to use pre-stored data if they do not have any data of their own to use.
+
++ The project has 2 main dealines to achieve:
+  + **MIDTERM:** 27 Jun 22
+  + **SUBMISSION:** 5 Sep 22
+
+**This document is arranged as follows:**
++ Project overview
++ Product description
++ Product functional capabilites
++ User roles 
++ Use cases
++ General contraints
++ Project assumptions
++ Interaction with other software
++ Specific function descriptions 
++ External interfaces
++ Performance 
++ Design constraints
++ Reliability, Availability, Maintainability
++ Configurability and Compatibility
++ Installability
++ Usability
++ Additional requirements
++ Data
++ Administration 
++ Project documentation 
++ Requirements
++ References 
+
+
+### Product description
+This software will be a free piece of Data Science software that will allow the user to upload their own data, in a multitude of data types, and the software will then produce graphics of the data uploaded.
+
+The software will have the following features:
++ **Data upload:** The user will be able to upload their own data. There will also be pre-loaded data for the user to use if they do not load their own data. 
+
++ **Error management:** The software will manage omissions, incorrect data types and other issues that would typically crash the software within the uploaded data file from the user. The software will report any errors to the user and inform the user what the outcome of these issues is - eg. 3 lines in data corrupted, they have been omitted
+  
++ **Graphic generation:** The software will generate graphics for the data that is being used. 
+  
++ **Graphics export:** The software will give the user an option to save the graphics to disk should they be required.  
+
+
+
+
+
+# Anything below this point needs finalised
+
 
 ###Product functional capabilities
 Present a list of the functions that the software will be required to perform. If a product feature comprises several functional capabilities, a table may be developed to illustrate these relationships. The list of functional capabilities may be an updated version of the capabilities listed in the Software Requirements Document.
@@ -22,20 +71,18 @@ List any assumptions that were made in specifying the functional requirements.
 ###Other software
 How does the program interact with other software, such as spreadsheets, word processing or presentation software? For example, can a user cut and paste from the application to other Windows software programs? Does the program import/export data to other software? Does the program use any communication, integration, or protocols to exchange data with other software?
 
+
 ###Specific Function Descriptions
 This section is repeated for each function of the software. Some examples of functions are: engineering calculations, sorting or sequencing, other operations relating inputs to outputs, validity checks on inputs, error handling and recovery.
 
-###Description
 Describe the function and its role in the software.
 
-###Inputs
 Describe the inputs to the function. Where user interface (UI) elements are present, these are described. Examples of UI elements are check boxes, dropdown lists, and alphanumeric fields. Input validation strategy, allowed data types and value ranges are specified for each input.
 
-###Processing
 Describe what is done by the function. Where algorithms, equations, or other logic are used, they are described here. If calculations are done utilizing the methods of specific standards or references, these are cited. Database definitions are also included where relevant.
 
-###Outputs
 Describe the outputs of the function. Where a user interface description is relevant, it is included. Define any reports.
+
 
 ###External Interfaces
 The interfaces in this section are specified by documenting: the name and description of each item, source or input, destination or output, ranges, accuracy and tolerances, units of measure, timing, display formats and organization, and data formats.
