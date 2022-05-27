@@ -18,3 +18,5 @@
 + Each file under  `app/src/routes` is a page
 + `__layout.svelte` joins the header, content, and footer
 + Just like plain HTML/JS on each `.svelte` file you have a script and style fields, any content is like the "body"
+
+### INTRO TO SVELTE: https://svelte.dev/examples/hello-world
