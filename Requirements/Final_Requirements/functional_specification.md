@@ -1,8 +1,67 @@
-###Overview
-+ Describe the purpose, scope, and organization of the Functional Specification.
+### Overview
+This project is the main deliverable for the University of London CS BSc module CM2020. The project will create a browser based piece of software that will allow the user to load their own data, or use pre-built data if requried, and it will then produce Data Science graphics and statistical analysis for the data provided. If the user decides to upload their own data the software will manage any data errors without crashing the main program.
 
-###Product description
-+ Describe briefly why the software (or upgrade) is being developed, and list the most important features and capabilities.
+The project is governed and assessed by the University of London staff. The CM2020 team members have local governance and are responsible for the production of all elements of the project to include documenttion and source code. 
+
+The project will be completed in a series of phases that relate to the software lifecycle. These phases are Planning, Requirements, Design & Prototyping, Software development, Testing, Deployemnt, Operations and Maintenance. Within each phase there are a series of key milstones/markers that will be achived. If found to be appropriate the cycle may loop back to a previous state if features / functionality are identified as desirable or essential. The core development approach will be **INSERT DEVELOPMENT STYLE**
+
+**INSERT DELIVERABLES.MD FILE ONCE COMPLETE** 
+
+The project has the following deliverables on the outlined deadlines:
++ **MIDTERM:** 
+  + Date: 27 Jun 22
+  + Description: The project outline with all proposed documentation
++ **SUBMISSION:** 5 Sep 22
+  + Date: 5 Sep 22
+  + Description: The full project submission with all relevant files, documents and git logs.
+
+The project will incur no financial cost to complete but it will require a joint amount of time committed by each team member. The project will require approximately 1-2 Hours of work per team member to produce the core deliverables and then 0:30-1 Hour for the weekly team meeting. 
+
+The project assumes the user has a basic level of computer knowledge and is able to naviate and use a modern computing operating system, a modern web browser (such as Google Chrome etc.) and also is able to utlise and work with files on an oepraitng system. The project also assumes that the user has sufficient web browsing software installed on the operating system in order to run the software. The user is also assumed to have appropriate privalege to run JavaScript from within a HTML file. The project utilises maps.js and p5.js to generate the graphics required for the project. As such any errors relating to these modules will be assumed to be of no fault to the development team as they were created by a third party. The project will not have any networking functionality and will be assumed to be a locally ran file on the users computer.  
+
+**This document is arranged as follows:**
++ Project overview
++ Product description
++ Product functional capabilites
++ User roles 
++ Use cases
++ General contraints
++ Project assumptions
++ Interaction with other software
++ Specific function descriptions 
++ External interfaces
++ Performance 
++ Design constraints
++ Reliability, Availability, Maintainability
++ Configurability and Compatibility
++ Installability
++ Usability
++ Additional requirements
++ Data
++ Administration 
++ Project documentation 
++ Requirements
++ References 
+
+
+### Product description
+This software will be a free piece of Data Science software that will allow the user to upload their own data, in a multitude of data types, and the software will then produce graphics of the data uploaded.
+
+The software will have the following features:
++ **Data upload:** The user will be able to upload their own data. There will also be pre-loaded data for the user to use if they do not load their own data. 
+
++ **Error management:** The software will manage omissions, incorrect data types and other issues that would typically crash the software within the uploaded data file from the user. The software will report any errors to the user and inform the user what the outcome of these issues is - eg. 3 lines in data corrupted, they have been omitted
+  
++ **Graphic generation:** The software will generate graphics for the data that is being used. 
+  
++ **Graphics export:** The software will give the user an option to save the graphics to disk should they be required.  
+
+
+
+
+
+# Anything below this point needs finalised
+
 
 ###Product functional capabilities
 Present a list of the functions that the software will be required to perform. If a product feature comprises several functional capabilities, a table may be developed to illustrate these relationships. The list of functional capabilities may be an updated version of the capabilities listed in the Software Requirements Document.
@@ -22,20 +81,18 @@ List any assumptions that were made in specifying the functional requirements.
 ###Other software
 How does the program interact with other software, such as spreadsheets, word processing or presentation software? For example, can a user cut and paste from the application to other Windows software programs? Does the program import/export data to other software? Does the program use any communication, integration, or protocols to exchange data with other software?
 
+
 ###Specific Function Descriptions
 This section is repeated for each function of the software. Some examples of functions are: engineering calculations, sorting or sequencing, other operations relating inputs to outputs, validity checks on inputs, error handling and recovery.
 
-###Description
 Describe the function and its role in the software.
 
-###Inputs
 Describe the inputs to the function. Where user interface (UI) elements are present, these are described. Examples of UI elements are check boxes, dropdown lists, and alphanumeric fields. Input validation strategy, allowed data types and value ranges are specified for each input.
 
-###Processing
 Describe what is done by the function. Where algorithms, equations, or other logic are used, they are described here. If calculations are done utilizing the methods of specific standards or references, these are cited. Database definitions are also included where relevant.
 
-###Outputs
 Describe the outputs of the function. Where a user interface description is relevant, it is included. Define any reports.
+
 
 ###External Interfaces
 The interfaces in this section are specified by documenting: the name and description of each item, source or input, destination or output, ranges, accuracy and tolerances, units of measure, timing, display formats and organization, and data formats.
