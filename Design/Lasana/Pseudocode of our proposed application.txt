@@ -1,0 +1,53 @@
+﻿Pseudocode of our proposed application
+
+
+The application will accept data in a range of different formats, including; CSV, XLS and from Google BigQuery, and present it to the user in different formats.  The following will give details of pseudocode that relates to some of the key functions and components.
+
+
+
+
+improt_Function
+When the import button is clicked
+Open an option window
+Options for import are:
+import_CSV, import_XLS, import_BigQ
+
+
+improt_CSV
+Check the file type is CSV
+Check file data size is within a reasonable range
+Import data row by looping row into array_CSV[i] 
+First row (array_CSV[0]) used for headings and key
+Get the length of the array
+
+
+import_XLS
+Similar function to import_CSV
+Import data into array_CSV[i] and use heading
+
+
+import_BigQ
+Connect to a BigData instance with valid Google Account
+Choose database from list of active databases
+query_BigQ
+Use the GET resource to perform query on given data set
+Export data to CSV and use import_CSV to import data into an array of the same name
+
+
+chart_Data
+This function would be used to chart data with recurrence counts in place
+Utilise Chart.js to plot a range of charts from loaded array
+The user will select which chart should be plotted from a popup window
+chart_Bar
+chart_Pie
+chart_Doughnut
+chart_Line
+etc
+
+
+export_Chart
+Each chart has the ability to be saved/exported as png or jpeg
+
+
+export_Dataset
+Each dataset has the ability to be exported as a different file format
