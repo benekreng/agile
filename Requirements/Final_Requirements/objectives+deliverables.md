@@ -15,7 +15,7 @@
 | Requirements            | Consult stakeholders on requirements           | See stakeholders.md         | **All Team:** Ask stakeholders their requirements  |
 | Requirements            | Scope similar projects                         | See research_summary.md     | **All Team:** Research similar products            |
 | Requirements            | Decide project scope                           | See project_scope.md        | **All Team:** Determine project scope              |
-| Requirements            | Finalise Requirements                          | Finalse all elements above  | **All Team:** Finalise Requirements                |
+| Requirements            | Finalise Requirements                          | Finalse all elements above  | **All Team:** Finalise Requirements by 19 June 22  |
 | Requirements            | Update Requirements                            | Integrate any new reqs      | **All Team:** Add requirements in as they appear   |
 |                         |                                                |                             |                                                    |
 | Design & Prototyping    | Scope initial pseudocode for proejct functions |                             |                                                    |
