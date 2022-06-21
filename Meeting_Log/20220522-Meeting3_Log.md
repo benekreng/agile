@@ -4,7 +4,13 @@
 
 ## Meeting Plan: Finalise the requirements phase 
 
-Meeting Outcomes: Connor was unanimously voted as the team leader by the group.
+Meeting Outcomes: 
+
+Connor was unanimously voted as the team leader by the group.
+Kashka was made the CTO
+David was made the CBD
+Ben was made the CFD
+Thavelarn was made the CRO
 
 The team were all aware of the GitHub repo and everyone has had access to it. All files, including this one, will be centrally stored on GitHub from here on. The GitHub file system has been split into phases of the development – requirements, design etc 
 
