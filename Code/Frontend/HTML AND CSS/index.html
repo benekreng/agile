@@ -8,7 +8,8 @@
     <title>Your Charting App</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="JavaScript/script.js" defer></script>
+
 </head>
     
 <body>
@@ -28,24 +29,29 @@
             <div class="second-pass">--------</div>
             <div class="third-phase"></div>
         </div>
-        <div class="phase-menu">
+
+        <div class="phase-menu" id="phaseMenu">
             
             <div class="phase-title">LOAD DATA</div>
 
-            <select name="type">
-                <option value="Pre loaded data">Pre loaded data</option>
-                <option value="Load CSV">Load CSV</option>
-                <option value="Google Big Query">Google Big Query</option>
+            <select name="type" id="dataSelectorDropDown">
+                <option value="Pre_Loaded_Data" selected="selected">Pre loaded data</option>
+                <option id="Option2" value="Data_Frome_File">Data from File</option>
+                <option value="Google_Big_Query">Google Big Query</option>
             </select>
 
-            <form action="/action_page.php">
-                <label class="filebrowser" for="my-file">
-                    <div id="file-name"></div>
-                    <img id="file" src="images/FileButtonLight.png">
-                    <input type="file" id="my-file" name="filename">
-                </label>
-                <input type="submit" value="LOAD">
-            </form>
+          
+            <div class="fileBrowser">
+                <input for="my-file" type="file" id="my-file" name="filename">
+            </div> 
+            <!-- <div class="fileBrowser" for="my-file" id="fileSelectorBar">
+                <input type="file" id="my-file" name="filename">
+                <div id="file-name"></div>
+                <img id="file" src="images/FileButtonLight.png">
+            </div> -->
+
+            <button id="generateGraphsButton"> Generate Graphs</button>
+  
         </div>
     </div>
     
