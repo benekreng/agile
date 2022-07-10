@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Charting App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+    
+<body>
+    <header>
+        <img class="navbutton" id="bars" onclick="displayMenu()" src="images/MenuButtonDark.png">
+        <img class="navbutton" id="cross" onclick="closeMenu()" src="images/CrossButtonDark.png">
+        <div class="title">Chart App</div>
+        <img class="navbutton" id="info" src="images/InfoButtonDark.png">
+    </header>
+    
+    <!--First Phase-->
+    <div id="menu">
+        <div class="progress-bar">
+            <div class="first-phase"></div>
+            <div class="first-pass">--------</div>
+            <div class="second-phase"></div>
+            <div class="second-pass">--------</div>
+            <div class="third-phase"></div>
+        </div>
+        <div class="phase-menu">
+            
+            <div class="phase-title">LOAD DATA</div>
+
+            <select name="type">
+                <option value="Pre loaded data">Pre loaded data</option>
+                <option value="Load CSV">Load CSV</option>
+                <option value="Google Big Query">Google Big Query</option>
+            </select>
+
+            <form action="/action_page.php">
+                <label class="filebrowser" for="my-file">
+                    <div id="file-name"></div>
+                    <img id="file" src="images/FileButtonLight.png">
+                    <input type="file" id="my-file" name="filename">
+                </label>
+                <input type="submit" value="LOAD">
+            </form>
+        </div>
+    </div>
+    
+    <!--Second Phase-->
+    <!--<div id="menu">
+        <div class="progress-bar">
+            <div class="first-phase"></div>
+            <div class="first-pass">--------</div>
+            <div class="second-phase"></div>
+            <div class="second-pass">--------</div>
+            <div class="third-phase"></div>
+        </div>
+        <div class="phase-menu">
+            
+            <div class="phase-title">DISPLAY RESULTS</div>
+
+            <select name="type">
+                <option value="Bar Chart">Bar Chart</option>
+                <option value="Scatter Chart">Scatter Chart</option>
+                <option value="Line Chart">Line Chart</option>
+            </select>
+
+            <form action="/action_page.php">
+                
+                <label class="checkbox-container">Use Mean
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="checkbox-container">Use Median
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <input type="submit" value="DISPLAY">
+            </form>
+        </div>
+    </div>-->
+    
+    <!--Third Phase-->
+    <!--<div id="menu">
+        <div class="progress-bar">
+            <div class="first-phase"></div>
+            <div class="first-pass">--------</div>
+            <div class="second-phase"></div>
+            <div class="second-pass">--------</div>
+            <div class="third-phase"></div>
+        </div>
+        <div class="phase-menu">
+            
+            <div class="phase-title">EXPORT DATA</div>
+
+            <select name="type">
+                <option value=".xlsx">.xlsx</option>
+                <option value=".csv">.csv</option>
+                <option value=".md">.md</option>
+                <option value=".png">.png</option>
+            </select>
+
+            <form action="/action_page.php">
+                
+                <input type="submit" value="EXPORT">
+            </form>
+        </div>
+    </div>-->
+    
+    <canvas></canvas>
+
+</body>
+
+</html>
