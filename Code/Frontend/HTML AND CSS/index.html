@@ -36,21 +36,17 @@
 
             <select name="type" id="dataSelectorDropDown">
                 <option value="Pre_Loaded_Data" selected="selected">Pre loaded data</option>
-                <option id="Option2" value="Data_Frome_File">Data from File</option>
+                <option id="Option2" value="Data_From_File">Data from File</option>
                 <option value="Google_Big_Query">Google Big Query</option>
             </select>
-
-          
-            <div class="fileBrowser">
-                <input for="my-file" type="file" id="my-file" name="filename">
-            </div> 
-            <!-- <div class="fileBrowser" for="my-file" id="fileSelectorBar">
-                <input type="file" id="my-file" name="filename">
-                <div id="file-name"></div>
+            
+            <label class="fileBrowser" for="my-file">
+                <div id="file-name">No file uploaded</div>
                 <img id="file" src="images/FileButtonLight.png">
-            </div> -->
+                <input type="file" id="my-file" name="filename">
+            </label>
 
-            <button id="generateGraphsButton"> Generate Graphs</button>
+            <button id="generateGraphsButton">Generate Graphs</button>
   
         </div>
     </div>
@@ -67,13 +63,11 @@
         <div class="phase-menu">
             
             <div class="phase-title">DISPLAY RESULTS</div>
-
             <select name="type">
                 <option value="Bar Chart">Bar Chart</option>
                 <option value="Scatter Chart">Scatter Chart</option>
                 <option value="Line Chart">Line Chart</option>
             </select>
-
             <form action="/action_page.php">
                 
                 <label class="checkbox-container">Use Mean
@@ -103,14 +97,12 @@
         <div class="phase-menu">
             
             <div class="phase-title">EXPORT DATA</div>
-
             <select name="type">
                 <option value=".xlsx">.xlsx</option>
                 <option value=".csv">.csv</option>
                 <option value=".md">.md</option>
                 <option value=".png">.png</option>
             </select>
-
             <form action="/action_page.php">
                 
                 <input type="submit" value="EXPORT">
