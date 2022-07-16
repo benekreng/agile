@@ -14,14 +14,14 @@ var loadedData = null; // used in the load file option
 
 // Function for displaying the side menu
 function displayMenu() {
-    document.getElementById("menu").style.display = "flex";
+    document.getElementById("menu").style.left = "0";
     document.getElementById("cross").style.display = "block";
     document.getElementById("bars").style.display = "none";
 }
 
 // Function for hiding the side menu
 function closeMenu() {
-    document.getElementById("menu").style.display = "none";
+    document.getElementById("menu").style.left = "-275px";
     document.getElementById("cross").style.display = "none";
     document.getElementById("bars").style.display = "block";
 }
