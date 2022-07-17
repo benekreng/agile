@@ -4,12 +4,13 @@
 //retract.addEventListener("click", function() {
 //    links.classList.toggle("active");
 //})
-
-
 var usePreBuiltData = true
 var loadData = false
 
 var loadedData = null; // used in the load file option
+
+let globalChart; // Chart Global Object
+const ctx = document.getElementById('chart'); // Canvas Global Element
 
 
 // Function for displaying the side menu
@@ -78,7 +79,10 @@ generateGraphsButton.addEventListener("click", function(e){
 
   // Pre loaded Data option
   if(dropDownSelection == "Pre_Loaded_Data"){
-    // TODO add charts.js link with pre-loaded data here 
+    globalChart = new Chart(
+      ctx,
+      preLoadedConfig
+    );
   }
 
   // Loaded data from file 

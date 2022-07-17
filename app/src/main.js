@@ -8,6 +8,7 @@ const labels = [
     'May',
     'June',
   ];
+  
 
   const data = {
     labels: labels,

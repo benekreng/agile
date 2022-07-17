@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="JavaScript/script.js" defer></script>
+    <!-- Load the chart manager script -->
+    <script type="text/javascript" src="../../Backend/chartsJSIntegration.js"></script>
 
 </head>
     
@@ -47,6 +49,12 @@
             </label>
 
             <button id="generateGraphsButton">Generate Graphs</button>
+            <!-- Functions that change the data (should be hidden until the chart is created) -->
+            <button onclick="randomize()" class="basic-btn">Randomize Data</button>
+            <button onclick="changeChart('line')" class="basic-btn">Line Chart</button>
+            <button onclick="changeChart('bar')" class="basic-btn">Bar Chart</button>
+            <button onclick="changeChart('doughnut')" class="basic-btn">doughnut Chart</button>
+            <button onclick="changeChart('polarArea')" class="basic-btn">polarArea Chart</button>
   
         </div>
     </div>
@@ -109,9 +117,14 @@
             </form>
         </div>
     </div>-->
-    
-    <canvas></canvas>
+        <!-- Actual, rendered instance of the cool timer -->
+        <!-- Template for our timer - won't be rendered! -->
 
+    <div class="chart-container" style="position: relative; padding: 4rem;">
+        <canvas id="chart"></canvas>
+    </div>
+    <!-- Import ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>
