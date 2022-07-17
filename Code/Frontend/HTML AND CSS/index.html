@@ -131,7 +131,10 @@
     </div>-->
         <!-- Actual, rendered instance of the cool timer -->
         <!-- Template for our timer - won't be rendered! -->
-
+    <div id="log" style="position: absolute; bottom: 1.5rem; right: 1.5rem; width: 16rem; background-color: crimson; padding: 1rem; display: none;">
+        <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayError(false)" src="images/CrossButtonDark.png">
+        <p id="logText"></p>
+    </div>
     <div class="chart-container" style="position: relative; padding: 4rem;">
         <canvas id="chart"></canvas>
     </div>
