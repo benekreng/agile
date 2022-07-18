@@ -38,7 +38,7 @@ window.onerror = function (msg, url, lineNo, columnNo, error) {
 
 function displayError(status){
   let logDiv = document.getElementById("log");
-  status ? logDiv.style.display = 'flex' :  logDiv.style.display = 'none'
+  status ? logDiv.style.display = 'flex' :  logDiv.style.display = 'none';
 }
 
 // Function for displaying the side menu
