@@ -101,11 +101,19 @@ input.addEventListener('change', function(e)
 const generateGraphsButton = document.getElementById("generateGraphsButton");
 
 generateGraphsButton.addEventListener("click", function(e){ 
+
+  //check to see if globalChart is in use and destroy
+  if(globalChart != null){
+    globalChart.destroy();
+    console.log("chart destroyed");
+  }
+
   console.log("generate graphs function activated")
 
   var dropDownSelection = document.getElementById("dataSelectorDropDown").value
 
   // Pre loaded Data option
+  
   if(dropDownSelection == "Pre_Loaded_Data"){
     globalChart = new Chart(
       ctx,
@@ -114,7 +122,7 @@ generateGraphsButton.addEventListener("click", function(e){
   }
 
   // Loaded data from file 
-  else if (dropDownSelection == "Data_Frome_File"){
+  else if (dropDownSelection == "Data_From_File"){
     // determine if data has been loaded yet
     if(loadedData == null){
       console.log("data generation not possible as no data has been loaded")
