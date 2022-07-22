@@ -32,6 +32,7 @@ generateGraphsButton.addEventListener("click", function(e){
     else{
       // TODO add charts.js link with loadedData variable here 
       console.log(loadedData)
+      // done in file selector
     }
   }
 

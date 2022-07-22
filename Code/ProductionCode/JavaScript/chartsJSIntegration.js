@@ -63,6 +63,67 @@ function changeChart(_type) {
   });
 }
 
+/*
+parsed data example:
+*/
+
+let _testData = [
+  [
+    "firstname",
+    " number"
+  ],
+  [
+    "Melina",
+    " 45"
+  ],
+  [
+    "Berta",
+    " 10"
+  ],
+  [
+    "Dulcinea",
+    " 56"
+  ],
+  [
+    "Daphne",
+    " 98"
+  ],
+  [
+    "Margette",
+    " 21"
+  ],
+  [
+    "Ivett",
+    " 23"
+  ]
+]
+
+function createChartWithData(_parsedData) {
+  console.log(`createChartWithData!`)
+  if(globalChart) {globalChart.destroy();};
+  let _labels = [];
+  let _data = [];
+
+  for (let i = 0; i < _parsedData.length; i++) {
+    _labels.push(_parsedData[i][0])
+    _data.push(_parsedData[i][0])
+  }
+
+  let dataForChart = {
+    _labels,
+    datasets: [{
+      label: 'Your Data',
+      _data
+    }]
+  };
+  console.log(_data)
+  globalChart = new Chart(ctx,{
+    type: "bar",
+    data: dataForChart
+  });
+}
+
+
 // Helpers
 function getRandomInt(min, max) {
   min = Math.ceil(min);

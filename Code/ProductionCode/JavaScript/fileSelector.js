@@ -1,3 +1,4 @@
+
 // Listener on the FILE SELECTOR button 
 // SOURCE https://www.youtube.com/watch?v=-AR-6X_98rM
 const input = document.querySelector('input[type="file"]');
@@ -17,6 +18,7 @@ input.addEventListener('change', function(e)
         
         // TESTING display parsed results
         console.log(loadedData)
+        createChartWithData(loadedData)
 
         // update the first part of the NavBar 
         const navBarElement = document.getElementById("navBar1");

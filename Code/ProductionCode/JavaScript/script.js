@@ -57,7 +57,7 @@ function closeMenu() {
 }
 
 // code to update the file name on the size menu once file is loaded
-document.querySelector("#my-file").onchange = function(){
+document.querySelector("#userImportButton").onchange = function(){
   document.querySelector("#file-name").textContent = this.files[0].name;
 }
 
