@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Charting App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/script.js" defer></script>
+    <!-- Load the chart manager script -->
+    <script type="text/javascript" src="JavaScript/chartsJSIntegration.js"></script>
+
+</head>
+    
+<body>
+    <header>
+        <img class="navbutton" id="bars" onclick="displayMenu()" src="images/MenuButtonDark.png">
+        <img class="navbutton" id="cross" onclick="closeMenu()" src="images/CrossButtonDark.png">
+        <div class="title">Chart App</div>
+        <img class="navbutton" id="info" src="images/InfoButtonDark.png">
+    </header>
+
+    
+    
+    <!--First Phase-->
+    <div id="menu">
+        <div class="progress-bar">
+            <div class="first-phase"></div>
+            <div class="first-pass">--------</div>
+            <div class="second-phase"></div>
+            <div class="second-pass">--------</div>
+            <div class="third-phase"></div>
+        </div>
+
+        <div class="phase-menu" id="phaseMenu">
+            
+            <div class="phase-title">LOAD DATA</div>
+
+            <select name="type" id="dataSelectorDropDown">
+                <option value="Pre_Loaded_Data" selected="selected">Pre loaded data</option>
+                <option id="Option2" value="Data_From_File">Data from File</option>
+                <option value="Google_Big_Query">Google Big Query</option>
+            </select>
+            
+            <label class="fileBrowser" for="my-file" id="fileBrowser">
+                <div id="file-name">No file uploaded</div>
+                <img id="file" src="images/FileButtonLight.png">
+                <input type="file" id="my-file" name="filename">
+            </label>
+
+            <button id="generateGraphsButton">Generate Graphs</button>
+            <!-- Functions that change the data (should be hidden until the chart is created) -->
+            <button onclick="randomize()" class="basic-btn">Randomize Data</button>
+            <button onclick="changeChart('line')" class="basic-btn">Line Chart</button>
+            <button onclick="changeChart('bar')" class="basic-btn">Bar Chart</button>
+            <button onclick="changeChart('doughnut')" class="basic-btn">doughnut Chart</button>
+            <button onclick="changeChart('polarArea')" class="basic-btn">polarArea Chart</button>
+            <button onclick="exportGraphic()" class="basic-btn">Export Graphic</button>
+
+            <!-- Data Export options -->
+            <div>
+                <input type="radio" id="png" name="dataExport" value="png" checked>
+                <label for="png">.png</label><br>
+                <input type="radio" id="jpeg" name="dataExport" value="jpeg">
+                <label for="jpeg">.jpeg</label><br>
+            </div>
+            
+            
+            
+  
+        </div>
+    </div>
+    
+    <!--Second Phase-->
+    <!--<div id="menu">
+        <div class="progress-bar">
+            <div class="first-phase"></div>
+            <div class="first-pass">--------</div>
+            <div class="second-phase"></div>
+            <div class="second-pass">--------</div>
+            <div class="third-phase"></div>
+        </div>
+        <div class="phase-menu">
+            
+            <div class="phase-title">DISPLAY RESULTS</div>
+            <select name="type">
+                <option value="Bar Chart">Bar Chart</option>
+                <option value="Scatter Chart">Scatter Chart</option>
+                <option value="Line Chart">Line Chart</option>
+            </select>
+            <form action="/action_page.php">
+                
+                <label class="checkbox-container">Use Mean
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label class="checkbox-container">Use Median
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <input type="submit" value="DISPLAY">
+            </form>
+        </div>
+    </div>-->
+    
+    <!--Third Phase-->
+    <!--<div id="menu">
+        <div class="progress-bar">
+            <div class="first-phase"></div>
+            <div class="first-pass">--------</div>
+            <div class="second-phase"></div>
+            <div class="second-pass">--------</div>
+            <div class="third-phase"></div>
+        </div>
+        <div class="phase-menu">
+            
+            <div class="phase-title">EXPORT DATA</div>
+            <select name="type">
+                <option value=".xlsx">.xlsx</option>
+                <option value=".csv">.csv</option>
+                <option value=".md">.md</option>
+                <option value=".png">.png</option>
+            </select>
+            <form action="/action_page.php">
+                
+                <input type="submit" value="EXPORT">
+            </form>
+        </div>
+    </div>-->
+        <!-- Actual, rendered instance of the cool timer -->
+        <!-- Template for our timer - won't be rendered! -->
+    <div id="log" style="position: absolute; bottom: 1.5rem; right: 1.5rem; width: 16rem; background-color: crimson; padding: 1rem; display: none;">
+        <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayError(false)" src="images/CrossButtonDark.png">
+        <p id="logText"></p>
+    </div>
+
+    <!-- Status bar -->
+    <div class="navigationBar">
+        <div id="navBar1" class="navigationBarSections" ></div>
+        <div id="navBar2" class="navigationBarSections" ></div>
+        <div id="navBar3" class="navigationBarSections" ></div>
+    </div>
+
+    <div class="chart-container" style="position: relative; padding: 4rem;">
+        <canvas id="chart"></canvas>
+    </div>
+    <!-- Import ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+    <!-- add in seperate function files -->
+    <!-- Navigation Bar at the top of the page showing 3 stages-->
+    <script src="JavaScript/navigationBar.js"></script>
+    <!-- File Selector -->
+    <script src="JavaScript/fileSelector.js"></script>
+    <!-- Generate Graphs button -->
+    <script src="JavaScript/generateGraphsButton.js"></script>
+    <!-- Graphic Export -->
+    <script src="JavaScript/graphicsExport.js"></script>
+
+</body>
+
+</html>
