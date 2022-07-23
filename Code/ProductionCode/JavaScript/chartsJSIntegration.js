@@ -103,20 +103,29 @@ function createChartWithData(_parsedData) {
   if(globalChart) {globalChart.destroy();};
   let _labels = [];
   let _data = [];
+  let _borderColor = [];
+  let _backgroundColor = [];
 
   for (let i = 0; i < _parsedData.length; i++) {
     _labels.push(_parsedData[i][0])
-    _data.push(_parsedData[i][0])
+    _data.push(_parsedData[i][1])
+    // add colors
+    let randomColor = random_rgba();
+    _borderColor.push(randomColor)
+    _backgroundColor.push(randomColor)
   }
 
   let dataForChart = {
-    _labels,
+    labels: _labels,
     datasets: [{
       label: 'Your Data',
-      _data
+      data: _data,
+      borderColor: _borderColor,
+      borderWidth: 1,
+      backgroundColor: _backgroundColor
     }]
   };
-  console.log(_data)
+  console.log(dataForChart)
   globalChart = new Chart(ctx,{
     type: "bar",
     data: dataForChart
@@ -129,6 +138,11 @@ function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function random_rgba() {
+  var o = Math.round, r = Math.random, s = 255;
+  return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
 
 
