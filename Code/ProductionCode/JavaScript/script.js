@@ -8,7 +8,7 @@ var usePreBuiltData = true
 var loadData = false
 
 
-var loadedData = null; // used in the load file option
+// var loadedData = null; // used in the load file option
 
 let globalChart; // Chart Global Object
 const ctx = document.getElementById('chart'); // Canvas Global Element

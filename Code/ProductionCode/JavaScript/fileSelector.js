@@ -3,6 +3,8 @@
 // SOURCE https://www.youtube.com/watch?v=-AR-6X_98rM
 const input = document.querySelector('input[type="file"]');
 
+var loadedData = null; // used in the load file option
+
 input.addEventListener('change', function(e)
 {
     // create FileReader object to view the file

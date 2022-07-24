@@ -1,8 +1,13 @@
 // Listener on the GENERATE GRAPHS button
 // TODO implement charts.js link for all options
 const generateGraphsButton = document.getElementById("generateGraphsButton");
+// navBar2 from navigationBar.js
+// navBar1 from navigationBar.js
 
 generateGraphsButton.addEventListener("click", function(e){ 
+  // set nav bar stage 2 
+  navBar2.style.backgroundColor = "red"
+  navBar1.style.backgroundColor = "red"
 
   //check to see if globalChart is in use and destroy
   if(globalChart != null){

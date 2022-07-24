@@ -1,6 +1,13 @@
 // Function to export the user generated graphics
+
+// const navBar3 = document.getElementById("navBar3");
+// navBar 3 from navigationBar.js
+
 function exportGraphic()
 {
+  // set nab bar stage 3
+  navBar3.style.backgroundColor = "red";
+
   // find the export option that the use has selected
   let exportOption = document.getElementsByName('dataExport');
   for(let x = 0; x < exportOption.length; x++)
