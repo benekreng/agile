@@ -10,13 +10,14 @@ dropDownMenu.addEventListener("change", function(e)
   if(dropDownMenu.value == "Pre_Loaded_Data")
   {
     navBar1.style.backgroundColor = "red"
-
+    document.getElementById("fileBrowser").style.display = "none";
   }
   else
   {
     navBar1.style.backgroundColor = "inherit";
     navBar2.style.backgroundColor = "inherit";
     navBar3.style.backgroundColor = "inherit";
+    document.getElementById("fileBrowser").style.display = "flex";
   }
 }
 )
