@@ -65,24 +65,24 @@ header {
     justify-content: center;
 }
 
-.first-phase, .second-phase, .third-phase {
+#first-phase, #second-phase, #third-phase {
     width: 15px;
     height: 15px;
     border: 3px solid #548235;
     border-width: 3px;
 }
 
-.first-phase {
+#first-phase {
     border-color: #548235;
     background-color: #E7E6E6;
 }
 
-.second-phase {
+#second-phase {
     border-color: #7F7F7F;
     background-color: #E7E6E6;
 }
 
-.third-phase {
+#third-phase {
     border-color: #7F7F7F;
     background-color: #E7E6E6;
 }
