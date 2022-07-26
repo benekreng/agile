@@ -87,11 +87,11 @@ header {
     background-color: #E7E6E6;
 }
 
-.first-pass {
+#first-pass {
     color: #7F7F7F;
 }
 
-.second-pass {
+#second-pass {
     color: #7F7F7F;
 }
 
@@ -153,7 +153,7 @@ form {
     color: #548235;
     font-size: 17.5px;
     margin-bottom: 20px;
-    display: flex;
+    display: none;
     flex-wrap: wrap; 
 }
 
