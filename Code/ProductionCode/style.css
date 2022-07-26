@@ -74,11 +74,11 @@ header {
 
 #first-phase {
     border-color: #548235;
-    background-color: #E7E6E6;
+    background-color: #548235;
 }
 
 #second-phase {
-    border-color: #7F7F7F;
+    border-color: #548235;
     background-color: #E7E6E6;
 }
 
@@ -88,11 +88,13 @@ header {
 }
 
 #first-pass {
-    color: #7F7F7F;
+    color: #548235;
+    font-size: 20px;
 }
 
 #second-pass {
     color: #7F7F7F;
+    font-size: 20px;
 }
 
 .phase-menu {
