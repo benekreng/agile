@@ -16,30 +16,33 @@ const ctx = document.getElementById('chart'); // Canvas Global Element
 
 //https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror
 window.onerror = function (msg, url, lineNo, columnNo, error) {
-  const string = msg.toLowerCase();
-  const substring = 'script error';
-  if (string.indexOf(substring) > -1){
-    alert('Script Error: See Browser Console for Detail');
-  } else {
-    const message = [
-      'Message: ' + msg,
-      'URL: ' + url,
-      'Line: ' + lineNo,
-      'Column: ' + columnNo,
-      'Error object: ' + JSON.stringify(error)
-    ].join('\n - ');
+    const string = msg.toLowerCase();
+    const substring = 'script error';
+    
+    if (string.indexOf(substring) > -1) {
+        alert('Script Error: See Browser Console for Detail');
+    }
+    
+    else {
+        const message = [
+            'Message: ' + msg,
+            'URL: ' + url,
+            'Line: ' + lineNo,
+            'Column: ' + columnNo,
+            'Error object: ' + JSON.stringify(error)
+        ].join('\n - ');
 
-    console.log(message);
-    document.getElementById("logText").innerHTML = msg;
-    displayError(true)
-  }
+        console.log(message);
+        document.getElementById("logText").innerHTML = msg;
+        displayError(true)
+    }
 
-  return false;
+    return false;
 };
 
-function displayError(status){
-  let logDiv = document.getElementById("log");
-  status ? logDiv.style.display = 'flex' :  logDiv.style.display = 'none';
+function displayError(status) {
+    let logDiv = document.getElementById("log");
+    status ? logDiv.style.display = 'flex' :  logDiv.style.display = 'none';
 }
 
 // Function for displaying the side menu
@@ -57,10 +60,6 @@ function closeMenu() {
 }
 
 // code to update the file name on the size menu once file is loaded
-document.querySelector("#userImportButton").onchange = function(){
-  document.querySelector("#file-name").textContent = this.files[0].name;
+document.querySelector("#userImportButton").onchange = function() {
+    document.querySelector("#file-name").textContent = this.files[0].name;
 }
-
-
-
-
