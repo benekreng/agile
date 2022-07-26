@@ -25,6 +25,10 @@ input.addEventListener('change', function(e)
         // update the first part of the NavBar 
         const navBarElement = document.getElementById("navBar1");
         navBarElement.style.backgroundColor = "red";
+        
+        document.getElementById("first-phase").style.backgroundColor = "#548235";
+        document.getElementById("first-pass").style.color = "#548235";
+        document.getElementById("second-phase").style.borderColor = "#548235";
 
     }
 
