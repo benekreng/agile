@@ -20,15 +20,16 @@ input.addEventListener('change', function(e)
         
         // TESTING display parsed results
         console.log(loadedData)
-        createChartWithData(loadedData)
+        // createChartWithData(loadedData)
 
         // update the first part of the NavBar 
-        const navBarElement = document.getElementById("navBar1");
-        navBarElement.style.backgroundColor = "red";
+        document.getElementById("navBar1").style.backgroundColor = "red";
+        document.getElementById("navBar2").style.backgroundColor = "inherit";
+        document.getElementById("navBar3").style.backgroundColor = "inherit";
         
         document.getElementById("first-phase").style.backgroundColor = "#548235";
-        document.getElementById("first-pass").style.color = "#548235";
-        document.getElementById("second-phase").style.borderColor = "#548235";
+        document.getElementById("first-pass").style.color = "inherit";
+        document.getElementById("second-phase").style.borderColor = "inherit";
 
     }
 
