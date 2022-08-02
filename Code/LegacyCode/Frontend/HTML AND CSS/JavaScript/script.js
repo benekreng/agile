@@ -174,3 +174,10 @@ function exportGraphic()
   var newTab = window.open("")
   newTab.document.write('<img src="'+img+'"/>')
 }
+
+  //show options
+  function displayOptions() {
+    var element = document.getElementById("popup");
+    element.classList.toggle("popupActive");
+    console.log('yes')
+  }
