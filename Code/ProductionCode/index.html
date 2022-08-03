@@ -58,6 +58,7 @@
             <button onclick="changeChart('bar')" class="basic-btn">Bar Chart</button>
             <button onclick="changeChart('doughnut')" class="basic-btn">doughnut Chart</button>
             <button onclick="changeChart('polarArea')" class="basic-btn">polarArea Chart</button>
+            <button onclick="displayOptions()" class="basic-btn">More Options</button>
             <button onclick="exportGraphic()" class="basic-btn">Export Graphic</button>
 
             <!-- Data Export options -->
@@ -68,6 +69,20 @@
                 <label for="jpeg">.jpeg</label><br>
             </div>
         </div>
+
+        <div id="popup" >
+
+            <div></div>
+            
+            <div class="phase-title">OPTIONS</div>
+
+            <div style="padding-left: 40px;">
+            <button onclick="randomize()" class="basic-btn">Option 1</button>
+            <button onclick="changeChart('line')" class="basic-btn">Option 2</button>
+            <button onclick="changeChart('bar')" class="basic-btn">Option 3</button>
+            </div>
+        </div>
+
     </div>
     
     <!--Second Phase-->

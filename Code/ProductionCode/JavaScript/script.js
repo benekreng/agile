@@ -63,3 +63,10 @@ function closeMenu() {
 document.querySelector("#userImportButton").onchange = function() {
     document.querySelector("#file-name").textContent = this.files[0].name;
 }
+
+//show options
+function displayOptions() {
+    var element = document.getElementById("popup");
+    element.classList.toggle("popupActive");
+    console.log('yes')
+}

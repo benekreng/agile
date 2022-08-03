@@ -356,3 +356,20 @@ canvas {
 #navBar1 {
     background-color: red;
 }
+
+.popupActive{
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    top: 160px;
+    left: 275px;
+    background-color: #E7E6E6;
+    box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.2);
+    border-color: #548235;
+    border: 4px;
+    border-style: dotted;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
