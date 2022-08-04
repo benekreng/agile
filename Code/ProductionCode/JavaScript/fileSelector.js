@@ -47,7 +47,6 @@ input.addEventListener('change', function(e)
             console.log("titles of the loaded data = "+titles);
             return [titles,masterObj];
         }
-
         parser(loadedData);
 
         // update the first part of the NavBar 
