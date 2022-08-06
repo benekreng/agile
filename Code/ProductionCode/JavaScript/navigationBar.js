@@ -10,7 +10,16 @@ dropDownMenu.addEventListener("change", function(e) {
     if (dropDownMenu.value == "Pre_Loaded_Data") {
         navBar1.style.backgroundColor = "red"
         
+        // remove elemnts that aren't appropriate to pre-loaded data
         document.getElementById("fileBrowser").style.display = "none";
+
+        // add other pre-loaded elements back
+        document.getElementById("generateGraphsButton").style.display = "flex";
+        document.getElementById("randomize").style.display = "flex";
+        document.getElementById("lineChartBtn").style.display = "flex";
+        document.getElementById("barChartBtn").style.display = "flex";
+        document.getElementById("doughnutChartBtn").style.display = "flex";
+        document.getElementById("polarChartBtn").style.display = "flex";
         
         document.getElementById("first-phase").style.backgroundColor = "#548235";
         document.getElementById("first-pass").style.color = "#548235";
@@ -22,8 +31,18 @@ dropDownMenu.addEventListener("change", function(e) {
         navBar2.style.backgroundColor = "inherit";
         navBar3.style.backgroundColor = "inherit";
         
+        // Show file input and options
         document.getElementById("fileBrowser").style.display = "flex";
-        
+
+        // remove pre-loaded options
+        document.getElementById("generateGraphsButton").style.display = "none";
+        document.getElementById("randomize").style.display = "none";
+        document.getElementById("lineChartBtn").style.display = "none";
+        document.getElementById("barChartBtn").style.display = "none";
+        document.getElementById("doughnutChartBtn").style.display = "none";
+        document.getElementById("polarChartBtn").style.display = "none";
+
+        // correct navigation bar
         document.getElementById("first-phase").style.backgroundColor = "#E7E6E6";
         document.getElementById("first-phase").style.borderColor = "#548235";
         document.getElementById("first-pass").style.color = "#7F7F7F";

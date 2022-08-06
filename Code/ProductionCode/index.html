@@ -11,6 +11,10 @@
     <script src="JavaScript/script.js" defer></script>
     <!-- Load the chart manager script -->
     <script type="text/javascript" src="JavaScript/chartsJSIntegration.js"></script>
+    <!-- File parser-->
+    <script src="JavaScript/fileUploadParser.js"></script>
+    <!-- Populate extra menu-->
+    <script src="JavaScript/populateExtraMenu.js"></script>
 
 </head>
     
@@ -52,34 +56,40 @@
             </label>
 
             <button id="generateGraphsButton">Generate Graphs</button>
+            <div>   </div>
             <!-- Functions that change the data (should be hidden until the chart is created) -->
-            <button onclick="randomize()" class="basic-btn">Randomize Data</button>
-            <button onclick="changeChart('line')" class="basic-btn">Line Chart</button>
-            <button onclick="changeChart('bar')" class="basic-btn">Bar Chart</button>
-            <button onclick="changeChart('doughnut')" class="basic-btn">doughnut Chart</button>
-            <button onclick="changeChart('polarArea')" class="basic-btn">polarArea Chart</button>
-            <button onclick="displayOptions()" class="basic-btn">More Options</button>
-            <button onclick="exportGraphic()" class="basic-btn">Export Graphic</button>
+            <button id="options" onclick="populateExtraMenu()" class="basic-btn">Select Options</button>
+            <div>  </div>
+            <button id="randomize" onclick="randomize()" class="basic-btn">Randomize Data</button>
+            <button id="lineChartBtn" onclick="changeChart('line')" class="basic-btn">Line Chart</button>
+            <button id="barChartBtn" onclick="changeChart('bar')" class="basic-btn">Bar Chart</button>
+            <button id="doughnutChartBtn" onclick="changeChart('doughnut')" class="basic-btn">doughnut Chart</button>
+            <button id="polarChartBtn" onclick="changeChart('polarArea')" class="basic-btn">polarArea Chart</button>
+            
+            <div id="exportGraphicArea">
+                <button onclick="exportGraphic()" class="basic-btn">Export Graphic</button>
 
-            <!-- Data Export options -->
-            <div>
-                <input type="radio" id="png" name="dataExport" value="png" checked>
-                <label for="png">.png</label><br>
-                <input type="radio" id="jpeg" name="dataExport" value="jpeg">
-                <label for="jpeg">.jpeg</label><br>
+                <!-- Data Export options -->
+                <div>
+                    <input type="radio" id="png" name="dataExport" value="png" checked>
+                    <label for="png">.png</label><br>
+                    <input type="radio" id="jpeg" name="dataExport" value="jpeg">
+                    <label for="jpeg">.jpeg</label><br>
+                </div>
             </div>
         </div>
 
+        <!-- Extra options windows -->
         <div id="popup" >
 
             <div></div>
             
             <div class="phase-title">OPTIONS</div>
 
-            <div style="padding-left: 40px;">
-            <button onclick="randomize()" class="basic-btn">Option 1</button>
-            <button onclick="changeChart('line')" class="basic-btn">Option 2</button>
-            <button onclick="changeChart('bar')" class="basic-btn">Option 3</button>
+            <div style="padding-left: 40px;" id="extrasMenu">
+                <button onclick="randomize()" class="basic-btn">Option 1</button>
+                <button onclick="changeChart('line')" class="basic-btn">Option 2</button>
+                <button onclick="changeChart('bar')" class="basic-btn">Option 3</button>
             </div>
         </div>
 
@@ -160,12 +170,11 @@
     <div class="chart-container" style="position: relative; padding: 4rem;">
         <canvas id="chart"></canvas>
     </div>
+
+
+
     <!-- Import ChartJS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-
-    <!-- add in seperate function files -->
     <!-- Navigation Bar at the top of the page showing 3 stages-->
     <script src="JavaScript/navigationBar.js"></script>
     <!-- File Selector -->

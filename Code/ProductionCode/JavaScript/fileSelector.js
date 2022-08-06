@@ -5,10 +5,14 @@ const input = document.querySelector('input[type="file"]');
 
 var loadedData = null; // used in the load file option
 
+var masterData = null;
+
 input.addEventListener('change', function(e)
 {
     // create FileReader object to view the file
     const reader = new FileReader()
+    // read the data as text 
+    reader.readAsText(input.files[0]);
 
     // display the  contents of the .csv file
     reader.onload = function()
@@ -18,36 +22,12 @@ input.addEventListener('change', function(e)
         // parsed results
         loadedData = reader.result.split('\n').map(function(line){return line.split(',')})
         
-        // TESTING display parsed results
-        console.log(loadedData)
-        // createChartWithData(loadedData)
+        // // TESTING display parsed results
+        // console.log("initial load", loadedData)
 
-        function parser(arr){
-            masterObj = {}
-            // pull the titles (should be the first index)
-            // this will perm remove titles from the array
-            titles = arr.shift()
-            for(let x = 0; x < titles.length; x++){
-                if(!(titles[x] in masterObj)){
-                    masterObj[titles[x]]= {}
-                    masterObj[titles[x]]["MasterIndex"] = x
-                    masterObj[titles[x]]["Data"] = []
-                }
-                else{
-                    console.log("Error, duplicate column title at index,", x, " Duplicate column name: ", titles[x])
-                }
-            }
-            for(const key in masterObj){
-                masterIndex = masterObj[key].MasterIndex
-                for(let x = 0; x < arr.length; x++)
-                {
-                    masterObj[key]["Data"].push(arr[x][masterIndex])
-                }
-            }
-            console.log("titles of the loaded data = "+titles);
-            return [titles,masterObj];
-        }
-        parser(loadedData);
+        // Split the data into titles and data
+        masterData = parser(loadedData)
+        console.log("parsed:", masterData)
 
         // update the first part of the NavBar 
         document.getElementById("navBar1").style.backgroundColor = "red";
@@ -58,11 +38,14 @@ input.addEventListener('change', function(e)
         document.getElementById("first-pass").style.color = "inherit";
         document.getElementById("second-phase").style.borderColor = "inherit";
 
+        // display options menu button
+        document.getElementById("options").style.display = "flex";
+
     }
 
-    // read the data as text 
-    reader.readAsText(input.files[0])
+    // // read the data as text 
+    // reader.readAsText(input.files[0]);
 
-
+    // populateExtraMenu(masterData)
 
 }, false)

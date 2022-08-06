@@ -377,6 +377,35 @@ canvas {
     transition: left 0.75s, box-shadow 0.75s;
 }
 
+#options {
+    display:none;
+
+}
+
+#exportGraphicArea {
+    display:none;
+}
+
+#randomize {
+    display:none;
+}
+
+#lineChartBtn {
+    display:none;
+}
+
+#barChartBtn {
+    display:none;
+}
+
+#doughnutChartBtn {
+    display:none;
+}
+
+#polarChartBtn{
+    display:none;
+}
+
 /*
 .popupActive {
     display: block;

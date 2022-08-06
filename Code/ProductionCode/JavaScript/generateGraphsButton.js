@@ -19,6 +19,14 @@ generateGraphsButton.addEventListener("click", function(e){
   // Pre loaded Data option
   
   if(dropDownSelection == "Pre_Loaded_Data"){
+    // show extra options
+
+    document.getElementById("randomize").style.display = "flex";
+    document.getElementById("lineChartBtn").style.display = "flex";
+    document.getElementById("barChartBtn").style.display = "flex";
+    document.getElementById("doughnutChartBtn").style.display = "flex";
+    document.getElementById("polarChartBtn").style.display = "flex";
+
     // update the navigation bar
     document.getElementById("navBar2").style.backgroundColor = "red";
 
@@ -26,6 +34,8 @@ generateGraphsButton.addEventListener("click", function(e){
       ctx,
       preLoadedConfig
     );
+
+    document.getElementById("exportGraphicArea").style.display = "flex";
   }
 
   // Loaded data from file 
@@ -51,6 +61,8 @@ generateGraphsButton.addEventListener("click", function(e){
   else{
     console.log("Unknown state with charts.js Data load")
   }
+
+  
 
 
 })

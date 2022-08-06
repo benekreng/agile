@@ -66,19 +66,19 @@ document.querySelector("#userImportButton").onchange = function() {
     document.querySelector("#file-name").textContent = this.files[0].name;
 }
 
-//show options
-function displayOptions() {
-    var element = document.getElementById("popup");
-//    element.classList.toggle("popupActive");
-//    console.log('yes')
-    if (element.style.left == "275px") {
-        element.style.left = "0";
-        element.style.boxShadow = "none";
-        console.log('none')
-    }
-    else {
-        element.style.left = "275px";
-        element.style.boxShadow = "5px 0px 5px 0px rgba(0,0,0,0.2)";
-        console.log('block')
-    }
-}
+// //show options
+// function displayOptions() {
+//     var element = document.getElementById("popup");
+// //    element.classList.toggle("popupActive");
+// //    console.log('yes')
+//     if (element.style.left == "275px") {
+//         element.style.left = "0";
+//         element.style.boxShadow = "none";
+//         console.log('none')
+//     }
+//     else {
+//         element.style.left = "275px";
+//         element.style.boxShadow = "5px 0px 5px 0px rgba(0,0,0,0.2)";
+//         console.log('block')
+//     }
+// }
