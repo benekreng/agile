@@ -130,15 +130,16 @@ select {
     margin-bottom: 20px;
     width: 80%;
     appearance: none;
-    background: url(images/ArrowDownButtonLight.png) 100% / 31px no-repeat;
+    background: url(images/ArrowDownButtonLight.png) 100% / 31px 31px no-repeat;
 }
 
 select:hover {
-    background: url(images/ArrowDownButtonDark.png) 100% / 31px no-repeat;
+    background: url(images/ArrowDownButtonDark.png) 100% / 31px 31px no-repeat;
 }
 
 option {
     color: #7F7F7F;
+    background: #E7E6E6;
     margin: 5px;
 }
 
@@ -372,9 +373,8 @@ canvas {
     top: 160px;
     left: -275px;
     background-color: #E7E6E6;
-    box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.2);
     border-left: 4px dotted #548235;
-    transition: left 0.75s;
+    transition: left 0.75s, box-shadow 0.75s;
 }
 
 /*
