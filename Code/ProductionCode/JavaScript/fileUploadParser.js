@@ -14,6 +14,13 @@ function parser(arr){
             console.log("Error, duplicate column title at index,", x, " Duplicate column name: ", titles[x])
         }
     }
+
+    // find new list of titles after removing duplicates
+    let curatedTitles = []
+    for(let x in masterObj){
+        curatedTitles.push(x)
+    }
+
     for(const key in masterObj){
         masterIndex = masterObj[key].MasterIndex
         for(let x = 0; x < arr.length; x++)
@@ -22,5 +29,5 @@ function parser(arr){
         }
     }
     // console.log("titles of the loaded data = "+titles);
-    return [titles,masterObj];
+    return [curatedTitles,masterObj];
 }

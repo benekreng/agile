@@ -1,6 +1,7 @@
-function populateExtraMenu(){
+var titles
+var userData
 
-    console.log("populate extra menu function");
+function populateExtraMenu(){
 
     let optionsArea = document.getElementById('popup');
     // clear options area
@@ -10,44 +11,58 @@ function populateExtraMenu(){
     let title = document.createElement('div');
     title.innerText = "OPTIONS"
     title.classList.add("phase-title")
+    optionsArea.append(title)
 
     // pull loaded data from the masterData object within fileSelector.js
-    let titles = masterData[0];
-    let data = masterData[1];
+    titles = masterData[0];
 
-    for(const key in data){
-        let button = document.createElement('button');
-        button.innerText = key
-        button.classList.add("basic-btn");
-        optionsArea.append(button);
+    userData = []
+    for(let x in masterData[1]){
+        userData.push([masterData[1][x]["Data"]])
+    }
+
+    let counter = 0;
+    for(const key in masterData[1]){
+        let container = document.createElement('div');
+
+        let checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = key;
+        checkbox.name = key;
+        checkbox.value = counter;
+        container.append(checkbox)
+ 
+        let label = document.createElement('label')
+        label.htmlFor = key;
+        label.appendChild(document.createTextNode(key));
+        container.append(label)
+
+        optionsArea.append(container)
+        counter += 1
     }
     
     // add generate graphs button
     let button = document.createElement('button');
     button.innerText = "Generate Graphs"
     button.classList.add("basic-btn");
+    button.id = "generateUserGraphs"
+    button.onclick = generateUserGraphs;
     optionsArea.append(button);
-    button.onclick = console.log()
 
- 
-
-
-    console.log("titles", titles);
-    console.log("data", data);
-
+    // console.log("titles", titles);
+    // console.log("user data", userData);
 
     // hide or display the menu
     var element = document.getElementById("popup");
-//    element.classList.toggle("popupActive");
-//    console.log('yes')
     if (element.style.left == "275px") {
         element.style.left = "0";
         element.style.boxShadow = "none";
-        console.log('none')
+        // console.log('none')
     }
     else {
         element.style.left = "275px";
         element.style.boxShadow = "5px 0px 5px 0px rgba(0,0,0,0.2)";
-        console.log('block')
+        // console.log('block')
     }
+    
 }
