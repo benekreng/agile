@@ -50,6 +50,7 @@ function displayMenu() {
     document.getElementById("menu").style.left = "0";
     document.getElementById("cross").style.display = "block";
     document.getElementById("bars").style.display = "none";
+    document.getElementById("popup").style.left = "0";
 }
 
 // Function for hiding the side menu
@@ -57,6 +58,7 @@ function closeMenu() {
     document.getElementById("menu").style.left = "-275px";
     document.getElementById("cross").style.display = "none";
     document.getElementById("bars").style.display = "block";
+    document.getElementById("popup").style.left = "-275px";
 }
 
 // code to update the file name on the size menu once file is loaded
@@ -67,6 +69,14 @@ document.querySelector("#userImportButton").onchange = function() {
 //show options
 function displayOptions() {
     var element = document.getElementById("popup");
-    element.classList.toggle("popupActive");
-    console.log('yes')
+//    element.classList.toggle("popupActive");
+//    console.log('yes')
+    if (element.style.left == "275px") {
+        element.style.left = "0";
+        console.log('none')
+    }
+    else {
+        element.style.left = "275px";
+        console.log('block')
+    }
 }
