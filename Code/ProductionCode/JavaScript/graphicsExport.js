@@ -1,8 +1,3 @@
-// Function to export the user generated graphics
-
-// const navBar3 = document.getElementById("navBar3");
-// navBar 3 from navigationBar.js
-
 function exportGraphic() {
     
     // set nab bar stage 3
@@ -26,15 +21,24 @@ function exportGraphic() {
         }
     }
 
-    // set the string used for data export
-    let exportStr = "image/";
-    exportStr += fileExtension;
+    // code taken and adapted from https://stackoverflow.com/questions/923885/capture-html-canvas-as-gif-jpg-png-pdf
+    var canvas = document.getElementById("chart");
 
-    // find chart and convert to URL
-    let graphArea = document.getElementById("chart");
-    let img = graphArea.toDataURL("image/png");
+    var fileName = "export." + fileExtension
 
-    // create and write new graphic to new tab
-    var newTab = window.open("");
-    newTab.document.write('<img src="'+img+'"/>');
+    var MIME_TYPE = "image/" + fileExtension;
+
+    var imgURL = canvas.toDataURL(MIME_TYPE);
+
+    var dlLink = document.createElement('a');
+    dlLink.download = fileName;
+    dlLink.href = imgURL;
+    dlLink.dataset.downloadurl = [MIME_TYPE, dlLink.download, dlLink.href].join(':');
+
+    document.body.appendChild(dlLink);
+    dlLink.click();
+    document.body.removeChild(dlLink);
+
 }
+
+
