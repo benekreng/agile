@@ -22,20 +22,44 @@ function populateExtraMenu(){
     }
 
     let counter = 0;
+//    for(const key in masterData[1]){
+//        let container = document.createElement('div');
+//
+//        let checkbox = document.createElement('input');
+//        checkbox.type = 'checkbox';
+//        checkbox.id = key;
+//        checkbox.name = key;
+//        checkbox.value = counter;
+//        container.append(checkbox)
+// 
+//        let label = document.createElement('label')
+//        label.htmlFor = key;
+//        label.appendChild(document.createTextNode(key));
+//        container.append(label)
+//
+//        optionsArea.append(container)
+//        counter += 1
+//    }
+    
     for(const key in masterData[1]){
-        let container = document.createElement('div');
+        let container = document.createElement('label');
+        container.classList.add("checkbox-container");
 
         let checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.id = key;
         checkbox.name = key;
         checkbox.value = counter;
-        container.append(checkbox)
+        container.append(checkbox);
+        
+        let span = document.createElement('span');
+        span.classList.add("checkmark");
+        container.append(span);
  
         let label = document.createElement('label')
         label.htmlFor = key;
         label.appendChild(document.createTextNode(key));
-        container.append(label)
+        container.append(label);
 
         optionsArea.append(container)
         counter += 1

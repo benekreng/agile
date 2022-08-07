@@ -35,8 +35,8 @@ input.addEventListener('change', function(e)
         document.getElementById("navBar3").style.backgroundColor = "inherit";
         
         document.getElementById("first-phase").style.backgroundColor = "#548235";
-        document.getElementById("first-pass").style.color = "inherit";
-        document.getElementById("second-phase").style.borderColor = "inherit";
+        document.getElementById("first-pass").style.color = "#548235";
+        document.getElementById("second-phase").style.borderColor = "#548235";
 
         // display options menu button
         document.getElementById("options").style.display = "flex";
