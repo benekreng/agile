@@ -17,7 +17,6 @@ generateGraphsButton.addEventListener("click", function(e){
   var dropDownSelection = document.getElementById("dataSelectorDropDown").value
 
   // Pre loaded Data option
-  
   if(dropDownSelection == "Pre_Loaded_Data"){
     // show extra options
 
