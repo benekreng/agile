@@ -39,7 +39,7 @@ input.addEventListener('change', function(e)
         document.getElementById("second-phase").style.borderColor = "#548235";
 
         // display options menu button
-        document.getElementById("options").style.display = "flex";
+        document.getElementById("options").style.display = "block";
 
     }
 

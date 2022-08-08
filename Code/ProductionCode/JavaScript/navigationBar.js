@@ -14,7 +14,7 @@ dropDownMenu.addEventListener("change", function(e) {
         document.getElementById("fileBrowser").style.display = "none";
 
         // add other pre-loaded elements back
-        document.getElementById("generateGraphsButton").style.display = "flex";
+        document.getElementById("generateGraphsButton").style.display = "block";
         // document.getElementById("randomize").style.display = "flex";
         // document.getElementById("lineChartBtn").style.display = "flex";
         // document.getElementById("barChartBtn").style.display = "flex";

@@ -20,11 +20,11 @@ generateGraphsButton.addEventListener("click", function(e){
   if(dropDownSelection == "Pre_Loaded_Data"){
     // show extra options
 
-    document.getElementById("randomize").style.display = "flex";
-    document.getElementById("lineChartBtn").style.display = "flex";
-    document.getElementById("barChartBtn").style.display = "flex";
-    document.getElementById("doughnutChartBtn").style.display = "flex";
-    document.getElementById("polarChartBtn").style.display = "flex";
+    document.getElementById("randomize").style.display = "block";
+    document.getElementById("lineChartBtn").style.display = "block";
+    document.getElementById("barChartBtn").style.display = "block";
+    document.getElementById("doughnutChartBtn").style.display = "block";
+    document.getElementById("polarChartBtn").style.display = "block";
 
     // update the navigation bar
     document.getElementById("navBar2").style.backgroundColor = "red";
