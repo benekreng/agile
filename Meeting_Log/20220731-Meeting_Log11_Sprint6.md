@@ -1,4 +1,4 @@
-### Date: 17 Jul 22
+### Date: 31 Jul 22
 ### Meeting type: Sprint 5 recap and sprint 6 duties 
 ### Attendees: Connor, Thavelarn, Kashka, Ben
 
