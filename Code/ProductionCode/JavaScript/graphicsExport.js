@@ -13,13 +13,16 @@ function exportGraphic() {
     document.getElementById("third-phase").style.borderColor = "#548235";
 
     // find the export option that the use has selected
-    let exportOption = document.getElementsByName('dataExport');
-    for (let x = 0; x < exportOption.length; x++) {
-        if(exportOption[x].checked == true) {
-            var fileExtension = exportOption[x].value;
-            break;
-        }
-    }
+    // let exportOption = document.getElementsByName('dataExport');
+    // for (let x = 0; x < exportOption.length; x++) {
+    //     if(exportOption[x].checked == true) {
+    //         var fileExtension = exportOption[x].value;
+    //         break;
+    //     }
+    // }
+
+    let exportOptions = document.getElementById('dataExportOptions');
+    var fileExtension = exportOptions.options[exportOptions.selectedIndex].value;
 
     // code taken and adapted from https://stackoverflow.com/questions/923885/capture-html-canvas-as-gif-jpg-png-pdf
     var canvas = document.getElementById("chart");
