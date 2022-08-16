@@ -39,7 +39,7 @@ header {
     width: 50px;
 }
 
-#menu {
+#menu, #info-menu {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -49,9 +49,18 @@ header {
     z-index: 1;
     position: absolute;
     top: 50px;
+}
+
+#menu {
     left: -275px;
-    box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.2);
     transition: left 0.75s;
+    box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+#info-menu {
+    right: -275px;
+    transition: right 0.75s;
+    box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.2);
 }
 
 .progress-bar {
@@ -322,11 +331,11 @@ canvas {
     content: url(images/MenuButtonLight.png);
 }
 
-#cross:hover {
+#cross:hover, #info-cross:hover {
     content: url(images/CrossButtonLight.png);
 }
 
-#cross {
+#cross, #info-cross {
     display: none;
 }
 

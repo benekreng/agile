@@ -55,6 +55,20 @@ function closeMenu() {
     document.getElementById("popup").style.left = "-275px";
 }
 
+// Function for displaying the info menu
+function displayInfo() {
+    document.getElementById("info-menu").style.right = "0";
+    document.getElementById("info-cross").style.display = "block";
+    document.getElementById("info").style.display = "none";
+}
+
+// Function for hiding the info menu
+function closeInfo() {
+    document.getElementById("info-menu").style.right = "-275px";
+    document.getElementById("info-cross").style.display = "none";
+    document.getElementById("info").style.display = "block";
+}
+
 // code to update the file name on the size menu once file is loaded
 document.querySelector("#userImportButton").onchange = function() {
     document.querySelector("#file-name").textContent = this.files[0].name;
