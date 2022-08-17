@@ -64,7 +64,7 @@ function displayInfo() {
 
 // Function for hiding the info menu
 function closeInfo() {
-    document.getElementById("info-menu").style.right = "-275px";
+    document.getElementById("info-menu").style.right = "-675px";
     document.getElementById("info-cross").style.display = "none";
     document.getElementById("info").style.display = "block";
 }

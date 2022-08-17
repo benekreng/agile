@@ -11,6 +11,7 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 .bar {
     height: 3px;
@@ -49,6 +50,7 @@ header {
     z-index: 1;
     position: absolute;
     top: 50px;
+    overflow: auto;
 }
 
 #menu {
@@ -58,9 +60,24 @@ header {
 }
 
 #info-menu {
-    right: -275px;
+    right: -675px;
     transition: right 0.75s;
     box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 675px;
+}
+
+#info-menu p {
+    padding-bottom: 10px;
+}
+
+#info-menu li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#info-menu ol {
+    padding-left: 20px;
 }
 
 .progress-bar {
