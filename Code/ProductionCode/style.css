@@ -50,7 +50,6 @@ header {
     z-index: 1;
     position: absolute;
     top: 50px;
-    overflow: auto;
 }
 
 #menu {
@@ -65,6 +64,7 @@ header {
     box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.2);
     padding: 20px;
     width: 675px;
+    overflow-y: auto;
 }
 
 #info-menu p {
