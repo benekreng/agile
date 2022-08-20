@@ -31,6 +31,8 @@ function generateUserGraphs(){
     console.log("data to be passed to the charts")
     console.log(userTitlesToGraph)
     console.log(userDataToGraph)
+    console.log(userDataToGraph[0][0])
+    console.log(userDataToGraph[1][0])
 
 
     // TODO Fix the chart.js integration
@@ -44,7 +46,7 @@ function generateUserGraphs(){
     let LoadedData = {
         userTitlesToGraph,
         datasets: [{
-            label: userTitlesToGraph,
+            label: "Your Graph",
             data: userDataToGraph,
             borderColor: [
                 'rgba(255, 99, 132, 1)',
@@ -66,18 +68,48 @@ function generateUserGraphs(){
         }]
     };
     
+    let test = [
+        [
+            [
+                "Melina",
+                "Berta",
+                "Dulcinea",
+                "Daphne",
+                "Margette",
+                "Ivett",
+                ""
+            ]
+        ],
+        [
+            [
+                "45",
+                "10",
+                "56",
+                "98",
+                "21",
+                "23",
+                null
+            ]
+        ]
+    ]
     // configuration object to be used in the charts.js instance
+    let colors = getColors(userDataToGraph[0][0].length)
     let LoadedConfig = {
-        type: 'line',
-        data: LoadedData,
-        options: {}
+        labels: userDataToGraph[0][0],
+        datasets: [{
+            label: 'Your Data',
+            data: userDataToGraph[1][0],
+            borderColor: colors.border,
+            borderWidth: 1,
+            backgroundColor: colors.background
+        }]
     };
 
     // create the chart
-    globalChart = new Chart(
-        ctx,
-        LoadedConfig
-      );
+    globalChart = new Chart(ctx, {
+        type: "bar",
+        data: LoadedConfig
+    });
 
     // Update the navigation bar
     document.getElementById("navBar1").style.backgroundColor = "Red"
@@ -86,4 +118,25 @@ function generateUserGraphs(){
     // display the export option on the layer 1 side menu
     document.getElementById("exportGraphicArea").style.display = "flex";
 
+}
+
+function getColors(n) {
+    let _borderColor = [];
+    let _backgroundColor = [];
+
+    for (let i = 0; i < n; i++) {
+        let randomColor = random_rgba();
+        _borderColor.push(randomColor)
+        _backgroundColor.push(randomColor)
+    }
+
+    return {
+        border: _borderColor,
+        background: _backgroundColor
+    }
+}
+
+function random_rgba() {
+    var o = Math.round, r = Math.random, s = 255;
+    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
