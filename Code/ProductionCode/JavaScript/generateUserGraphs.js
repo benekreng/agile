@@ -42,56 +42,6 @@ function generateUserGraphs(){
         console.log("chart destroyed");
     }
 
-    // core data of the charts.js chafrt
-    let LoadedData = {
-        userTitlesToGraph,
-        datasets: [{
-            label: "Your Graph",
-            data: userDataToGraph,
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1,
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ]
-        }]
-    };
-    
-    let test = [
-        [
-            [
-                "Melina",
-                "Berta",
-                "Dulcinea",
-                "Daphne",
-                "Margette",
-                "Ivett",
-                ""
-            ]
-        ],
-        [
-            [
-                "45",
-                "10",
-                "56",
-                "98",
-                "21",
-                "23",
-                null
-            ]
-        ]
-    ]
     // configuration object to be used in the charts.js instance
     let colors = getColors(userDataToGraph[0][0].length)
     let LoadedConfig = {
