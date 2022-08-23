@@ -2,7 +2,7 @@
 ### Meeting type: Sprint 7 recap and sprint 8 duties 
 ### Attendees: Connor, Thavelarn
 
-## Meeting Plan: Review sprint 6 progress and outline tasks for sprint 7
+## Meeting Plan: Review sprint 7 progress and outline tasks for sprint 8
 
 Meeting Outcomes: Export functionality has been corrected. This is still to be made into a listbox - Connor to action.
 
