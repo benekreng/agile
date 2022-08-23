@@ -5,7 +5,10 @@ var loadData = false
 // var loadedData = null; // used in the load file option
 
 let globalChart; // Chart Global Object
-const ctx = document.getElementById('chart'); // Canvas Global Element
+//const ctx = document.getElementById('chart'); // Canvas Global Element
+const canvas = document.getElementById("chart");
+const ctx = canvas.getContext("2d");
+
 
 
 //https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror
@@ -45,6 +48,10 @@ function displayMenu() {
     document.getElementById("cross").style.display = "block";
     document.getElementById("bars").style.display = "none";
     document.getElementById("popup").style.left = "0";
+    document.getElementById("chartContainer").style.left = "275px";
+    document.getElementById("chartContainer").style.width = "calc(100% - 275px)";
+
+
 }
 
 // Function for hiding the side menu
@@ -53,6 +60,9 @@ function closeMenu() {
     document.getElementById("cross").style.display = "none";
     document.getElementById("bars").style.display = "block";
     document.getElementById("popup").style.left = "-275px";
+    document.getElementById("chartContainer").style.left = "0px";
+    document.getElementById("chartContainer").style.width = "100%";
+
 }
 
 // Function for displaying the info menu

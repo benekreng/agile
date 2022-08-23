@@ -39,7 +39,13 @@ let preLoadedData = {
 let preLoadedConfig = {
     type: 'line',
     data: preLoadedData,
-    options: {}
+    options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        onResize: (_chart, _size) => {
+            console.log("New Size:", _size)
+        }
+    }
 };
 
 // Data Changers
