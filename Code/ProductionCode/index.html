@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="JavaScript/script.js" defer></script>
     <!-- Load the chart manager script -->
-    <script type="text/javascript" src="JavaScript/chartsJSIntegration.js"></script>
+    <script src="JavaScript/chartsJSIntegration.js"></script>
     <!-- File parser-->
     <script src="JavaScript/fileUploadParser.js"></script>
     <!-- Populate extra menu-->
@@ -51,7 +51,7 @@
             
             <label class="fileBrowser" for="userImportButton" id="fileBrowser">
                 <div id="file-name">No file uploaded</div>
-                <img id="file" src="images/FileButtonLight.png">
+                <img id="file" src="images/FileButtonLight.png" alt="File Icon">
                 <!-- <input type="file" id="userImportButton" name="filename"> -->
                 <input type="file" id="userImportButton" name="userImportButton" accept=".csv">
             </label>
@@ -102,7 +102,7 @@
     </div>
     
     <!-- Side menu area -->
-    <div id="info-menu" alt="User Manual">
+    <div id="info-menu">
         <p>This is a project created for the UoL CM2020 ASP module as part of the CS BSc.</p>
         <p>The following outlines how the system works ...</p>
         <ol>
@@ -130,7 +130,7 @@
     
 
     <div id="log" style="position: absolute; bottom: 1.5rem; right: 1.5rem; width: 16rem; background-color: crimson; padding: 1rem; display: none;">
-        <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayError(false)" src="images/CrossButtonDark.png">
+        <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayError(false)" src="images/CrossButtonDark.png" alt="Cross Icon">
         <p id="logText"></p>
     </div>
 
