@@ -7,12 +7,15 @@ var loadedData = null; // used in the load file option
 
 var masterData = null;
 
+let gFileName;
+
 input.addEventListener('change', function(e)
 {
     // create FileReader object to view the file
     const reader = new FileReader()
     // read the data as text 
     reader.readAsText(input.files[0]);
+    gFileName = input.files[0].name;
 
     // display the  contents of the .csv file
     reader.onload = function()
@@ -22,8 +25,8 @@ input.addEventListener('change', function(e)
         // parsed results
         loadedData = reader.result.split('\n').map(function(line){return line.split(',')})
         
-        // // TESTING display parsed results
-        // console.log("initial load", loadedData)
+        // delete chart if exists
+        globalChart.destroy();
 
         // Split the data into titles and data
         masterData = parser(loadedData)
@@ -40,12 +43,12 @@ input.addEventListener('change', function(e)
 
         // display options menu button
         document.getElementById("options").style.display = "block";
-
+        // displau options
+        // show options
+        document.getElementById("lineChartBtn").style.display = "block";
+        document.getElementById("barChartBtn").style.display = "block";
+        document.getElementById("doughnutChartBtn").style.display = "block";
+        document.getElementById("polarChartBtn").style.display = "block";
     }
-
-    // // read the data as text 
-    // reader.readAsText(input.files[0]);
-
-    // populateExtraMenu(masterData)
 
 }, false)

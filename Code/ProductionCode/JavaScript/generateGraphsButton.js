@@ -18,8 +18,8 @@ generateGraphsButton.addEventListener("click", function(e){
 
   // Pre loaded Data option
   if(dropDownSelection == "Pre_Loaded_Data"){
+    if(globalChart != undefined) globalChart.destroy();
     // show extra options
-
     document.getElementById("randomize").style.display = "block";
     document.getElementById("lineChartBtn").style.display = "block";
     document.getElementById("barChartBtn").style.display = "block";
@@ -28,11 +28,11 @@ generateGraphsButton.addEventListener("click", function(e){
 
     // update the navigation bar
     document.getElementById("navBar2").style.backgroundColor = "gray";
-
-    globalChart = new Chart(
-      ctx,
-      preLoadedConfig
-    );
+    console.log("globalChart status", globalChart)
+    globalChart = new Chart(ctx, {
+      type: "bar",
+      data: globalChart == undefined ? mainConfig : presetConfig
+    });
 
     document.getElementById("exportGraphicArea").style.display = "flex";
   }
@@ -45,7 +45,6 @@ generateGraphsButton.addEventListener("click", function(e){
       console.log("data generation not possible as no data has been loaded")
     }
     else{
-      // TODO add charts.js link with loadedData variable here 
       console.log(loadedData)
     }
   }

@@ -17,10 +17,11 @@
 let mainData = [12, 19, 3, 5, 2, 3]
 let mainLabels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']
 
-let preLoadedData = {
+// default is rendered using mainConfig in generateGraphsButton.js
+let mainConfig = {
     labels: mainLabels,
     datasets: [{
-        label: '# of Votes',
+        label: "Preset Data",
         data: mainData,
         borderColor: [
             'rgba(255, 99, 132, 1)',
@@ -42,17 +43,17 @@ let preLoadedData = {
     }]
 };
 
-let preLoadedConfig = {
-    type: 'line',
-    data: preLoadedData,
-    options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        onResize: (_chart, _size) => {
-            console.log("New Size:", _size)
-        }
-    }
-};
+// object Deep copy https://www.javascripttutorial.net/object/3-ways-to-copy-objects-in-javascript/
+let presetConfig = JSON.parse(JSON.stringify(mainConfig));
+
+
+    // options: {
+    //     responsive: true,
+    //     maintainAspectRatio: true,
+    //     onResize: (_chart, _size) => {
+    //         console.log("New Size:", _size)
+    //     }
+    // }
 
 // Change all values in mainData with a 50% change of +/-
 // values are only changed between 1 and 5 inclusive
@@ -63,8 +64,9 @@ function randomize(){
         return;
     }
     for (let i = 0; i < mainData.length; i++) {
+        console.log(mainData[i])
         let offset = Math.random() < 0.5 ? mainData[i] + getRandomInt(1,5) : mainData[i] - getRandomInt(1,5)
-        mainData[i] = offset 
+        mainData[i] = offset ;
     }
     globalChart.update();
 }
@@ -77,10 +79,10 @@ function changeChart(_type) {
     }
     
     globalChart.destroy();
-    console.log(preLoadedConfig)
+    console.log(mainConfig)
     globalChart = new Chart(ctx, {
         type: _type,
-        data: preLoadedData
+        data: mainConfig
     });
 }
 
@@ -132,10 +134,10 @@ function generateUserGraphs(){
 
     // configuration object to be used in the charts.js instance
     let colors = getColors(userDataToGraph[0][0].length)
-    let LoadedConfig = {
+    mainConfig = {
         labels: userDataToGraph[0][0],
         datasets: [{
-            label: 'Your Data',
+            label: gFileName,
             data: userDataToGraph[1][0],
             borderColor: colors.border,
             borderWidth: 1,
@@ -146,7 +148,7 @@ function generateUserGraphs(){
     // create the chart
     globalChart = new Chart(ctx, {
         type: "bar",
-        data: LoadedConfig
+        data: mainConfig
     });
 
     // Update the navigation bar
@@ -183,7 +185,7 @@ function getColors(n) {
 
 function random_rgba() {
     var o = Math.round, r = Math.random, s = 255;
-    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + 255 + ')';
 }
 
 
