@@ -17,8 +17,7 @@ function displayMenu() {
     document.getElementById("popup").style.left = "0";
     document.getElementById("chartContainer").style.left = "275px";
     document.getElementById("chartContainer").style.width = "calc(100% - 275px)";
-
-
+    document.getElementById("nav").style.display = "none";
 }
 
 // Function for hiding the side menu
@@ -29,7 +28,7 @@ function closeMenu() {
     document.getElementById("popup").style.left = "-275px";
     document.getElementById("chartContainer").style.left = "0px";
     document.getElementById("chartContainer").style.width = "100%";
-
+    document.getElementById("nav").style.display = "flex";
 }
 
 // Function for displaying the info menu
