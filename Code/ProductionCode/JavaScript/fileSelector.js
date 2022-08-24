@@ -30,7 +30,7 @@ input.addEventListener('change', function(e)
         console.log("parsed:", masterData)
 
         // update the first part of the NavBar 
-        document.getElementById("navBar1").style.backgroundColor = "red";
+        document.getElementById("navBar1").style.backgroundColor = "gray";
         document.getElementById("navBar2").style.backgroundColor = "inherit";
         document.getElementById("navBar3").style.backgroundColor = "inherit";
         

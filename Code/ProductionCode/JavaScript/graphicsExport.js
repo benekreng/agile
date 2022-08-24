@@ -1,7 +1,7 @@
 function exportGraphic() {
     
     // set nab bar stage 3
-    navBar3.style.backgroundColor = "red";
+    navBar3.style.backgroundColor = "gray";
     
     document.getElementById("first-phase").style.backgroundColor = "#548235";
     document.getElementById("first-phase").style.borderColor = "#548235";

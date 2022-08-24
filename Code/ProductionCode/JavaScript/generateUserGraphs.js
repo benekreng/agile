@@ -62,8 +62,8 @@ function generateUserGraphs(){
     });
 
     // Update the navigation bar
-    document.getElementById("navBar1").style.backgroundColor = "Red"
-    document.getElementById("navBar2").style.backgroundColor = "Red"
+    document.getElementById("navBar1").style.backgroundColor = "gray";
+    document.getElementById("navBar2").style.backgroundColor = "gray";
     
     // display the export option on the layer 1 side menu
     document.getElementById("exportGraphicArea").style.display = "flex";

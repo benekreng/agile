@@ -3,8 +3,8 @@ const generateGraphsButton = document.getElementById("generateGraphsButton");
 
 generateGraphsButton.addEventListener("click", function(e){ 
 
-    navBar2.style.backgroundColor = "red"
-    navBar1.style.backgroundColor = "red"
+    navBar2.style.backgroundColor = "gray"
+    navBar1.style.backgroundColor = "gray"
 
   //check to see if globalChart is in use and destroy
   if(globalChart != null){
@@ -27,7 +27,7 @@ generateGraphsButton.addEventListener("click", function(e){
     document.getElementById("polarChartBtn").style.display = "block";
 
     // update the navigation bar
-    document.getElementById("navBar2").style.backgroundColor = "red";
+    document.getElementById("navBar2").style.backgroundColor = "gray";
 
     globalChart = new Chart(
       ctx,
