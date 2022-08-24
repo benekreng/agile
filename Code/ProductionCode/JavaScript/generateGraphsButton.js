@@ -31,7 +31,8 @@ generateGraphsButton.addEventListener("click", function(e){
     console.log("globalChart status", globalChart)
     globalChart = new Chart(ctx, {
       type: "bar",
-      data: globalChart == undefined ? mainConfig : presetConfig
+      data: globalChart == undefined ? mainConfig : presetConfig,
+      options: updator
     });
 
     document.getElementById("exportGraphicArea").style.display = "flex";

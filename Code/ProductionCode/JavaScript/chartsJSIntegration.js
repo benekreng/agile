@@ -46,15 +46,6 @@ let mainConfig = {
 // object Deep copy https://www.javascripttutorial.net/object/3-ways-to-copy-objects-in-javascript/
 let presetConfig = JSON.parse(JSON.stringify(mainConfig));
 
-
-    // options: {
-    //     responsive: true,
-    //     maintainAspectRatio: true,
-    //     onResize: (_chart, _size) => {
-    //         console.log("New Size:", _size)
-    //     }
-    // }
-
 // Change all values in mainData with a 50% change of +/-
 // values are only changed between 1 and 5 inclusive
 function randomize(){
@@ -82,7 +73,8 @@ function changeChart(_type) {
     console.log(mainConfig)
     globalChart = new Chart(ctx, {
         type: _type,
-        data: mainConfig
+        data: mainConfig,
+        options: updator
     });
 }
 
@@ -148,7 +140,8 @@ function generateUserGraphs(){
     // create the chart
     globalChart = new Chart(ctx, {
         type: "bar",
-        data: mainConfig
+        data: mainConfig,
+        options: updator
     });
 
     // Update the navigation bar
@@ -186,6 +179,27 @@ function getColors(n) {
 function random_rgba() {
     var o = Math.round, r = Math.random, s = 255;
     return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + 255 + ')';
+}
+
+function displayDimensions(status) {
+    let parent = document.getElementById("dimesions");
+    status ? parent.style.display = 'flex' :  parent.style.display = 'none';
+}
+
+let renderDimensions = (_size) => {
+    console.log(_size);
+    let msg = `w: ${_size.width}, h: ${_size.height}`
+    document.getElementById("dimesionsText").innerHTML = msg;
+    displayDimensions(true)
+}
+
+// updator for chart dimensions
+let updator = {
+    responsive: true,
+    maintainAspectRatio: true,
+    onResize: (_chart, _size) => {
+        renderDimensions(_size)
+    }
 }
 
 
