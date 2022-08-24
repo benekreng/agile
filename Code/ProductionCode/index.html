@@ -128,8 +128,13 @@
         <!--Insert info here-->
     </div>
     
+    <!-- Errors display -->
+    <div id="customLog">
+        <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayCustomError(false)" src="images/CrossButtonDark.png">
+        <p id="customLogText"></p>
+    </div>
 
-    <div id="log" style="position: absolute; bottom: 1.5rem; right: 1.5rem; width: 16rem; background-color: crimson; padding: 1rem; display: none;">
+    <div id="log">
         <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayError(false)" src="images/CrossButtonDark.png">
         <p id="logText"></p>
     </div>
@@ -156,7 +161,7 @@
     <!-- Generate Graphs button for pre-loaded data-->
     <script src="JavaScript/generateGraphsButton.js"></script>
     <!-- Generate Graphs button for user loaded data-->
-    <script src="JavaScript/generateUserGraphs.js"></script>
+    <script src="JavaScript/errors.js"></script>
     <!-- Graphic Export -->
     <script src="JavaScript/graphicsExport.js"></script>
 

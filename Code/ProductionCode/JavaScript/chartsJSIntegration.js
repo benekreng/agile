@@ -8,14 +8,20 @@
 // Fix on how to change the chart type
 // https://stackoverflow.com/questions/36949343/chart-js-dynamic-changing-of-chart-type-line-to-bar-as-example
 
-let data = [12, 19, 3, 5, 2, 3]
-let labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']
+
+// mainData & mainLabels HOLDS ALL THE INFO required to generate the chart
+// by default this are the preset info but are overritten on csv load
+// this is made to make the process of changing chart properties easier
+
+// global data for presets
+let mainData = [12, 19, 3, 5, 2, 3]
+let mainLabels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']
 
 let preLoadedData = {
-    labels,
+    labels: mainLabels,
     datasets: [{
         label: '# of Votes',
-        data,
+        data: mainData,
         borderColor: [
             'rgba(255, 99, 132, 1)',
             'rgba(54, 162, 235, 1)',
@@ -48,15 +54,17 @@ let preLoadedConfig = {
     }
 };
 
-// Data Changers
+// Change all values in mainData with a 50% change of +/-
+// values are only changed between 1 and 5 inclusive
 function randomize(){
     console.log("randomize")
     if (!globalChart) {
         console.log("globalChart not defined");
         return;
     }
-    for (let i = 0; i < data.length; i++) {
-        data[i] = getRandomInt(-10,10) 
+    for (let i = 0; i < mainData.length; i++) {
+        let offset = Math.random() < 0.5 ? mainData[i] + getRandomInt(1,5) : mainData[i] - getRandomInt(1,5)
+        mainData[i] = offset 
     }
     globalChart.update();
 }
@@ -110,6 +118,7 @@ function generateUserGraphs(){
     console.log("data to be passed to the charts")
     console.log(userTitlesToGraph)
     console.log(userDataToGraph)
+    if (userDataToGraph.length == 1) {customError("You must choose at least 2 columns"); return};
     console.log(userDataToGraph[0][0])
     console.log(userDataToGraph[1][0])
 

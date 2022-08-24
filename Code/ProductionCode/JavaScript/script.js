@@ -9,39 +9,6 @@ let globalChart; // Chart Global Object
 const canvas = document.getElementById("chart");
 const ctx = canvas.getContext("2d");
 
-
-
-//https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror
-window.onerror = function (msg, url, lineNo, columnNo, error) {
-    const string = msg.toLowerCase();
-    const substring = 'script error';
-    
-    if (string.indexOf(substring) > -1) {
-        alert('Script Error: See Browser Console for Detail');
-    }
-    
-    else {
-        const message = [
-            'Message: ' + msg,
-            'URL: ' + url,
-            'Line: ' + lineNo,
-            'Column: ' + columnNo,
-            'Error object: ' + JSON.stringify(error)
-        ].join('\n - ');
-
-        console.log(message);
-        document.getElementById("logText").innerHTML = msg;
-        displayError(true)
-    }
-
-    return false;
-};
-
-function displayError(status) {
-    let logDiv = document.getElementById("log");
-    status ? logDiv.style.display = 'flex' :  logDiv.style.display = 'none';
-}
-
 // Function for displaying the side menu
 function displayMenu() {
     document.getElementById("menu").style.left = "0";

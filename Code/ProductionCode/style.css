@@ -451,3 +451,27 @@ canvas {
 .popupActive {
     display: block;
 }*/
+
+/* ERRORS */
+
+#log {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 16rem;
+    background-color: crimson;
+    padding: 1rem;
+    display: none;
+}
+
+#customLog {
+    z-index: 20;
+    align-items: center;
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;
+    width: 16rem;
+    background-color: rgb(208, 197, 116);
+    padding: 1rem;
+    display: none;
+}
