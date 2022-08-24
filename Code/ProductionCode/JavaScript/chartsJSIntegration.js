@@ -76,84 +76,100 @@ function changeChart(_type) {
     });
 }
 
-/*
-parsed data example:
-*/
 
-let _testData = [
-    [
-        "firstname",
-        " number"
-    ],
-    [
-        "Melina",
-        " 45"
-    ],
-    [
-        "Berta",
-        " 10"
-    ],
-    [
-        "Dulcinea",
-        " 56"
-    ],
-    [
-        "Daphne",
-        " 98"
-    ],
-    [
-        "Margette",
-        " 21"
-    ],
-    [
-        "Ivett",
-        " 23"
-    ]
-]
+function generateUserGraphs(){
+    console.log("button pressed")
+    let optionsArea = document.getElementById('popup');
 
-function createChartWithData(_parsedData) {
-    console.log(`createChartWithData!`)
-    if (globalChart) {
+    let children = optionsArea.children;
+
+    indexesChecked = []
+
+    // start at index 1 to avoid the OPTIONS title bar
+    // finish -1 to avoid the generate graphs button
+    for(var i = 1; i < children.length -1 ; i++){
+        let child = children[i];
+
+        let checkbox = document.getElementById(child.children[0].id)
+        if(checkbox.checked)
+        {
+            console.log("checked")
+            indexesChecked.push(i-1) // true index of data 
+        }
+    }
+    
+    // curate the data from the core data objects 
+    let userTitlesToGraph = []
+    let userDataToGraph = []
+
+    for(let x = 0; x < indexesChecked.length; x++){
+        userTitlesToGraph.push(titles[indexesChecked[x]]);
+        userDataToGraph.push(userData[indexesChecked[x]]);
+    }
+
+    console.log("data to be passed to the charts")
+    console.log(userTitlesToGraph)
+    console.log(userDataToGraph)
+    console.log(userDataToGraph[0][0])
+    console.log(userDataToGraph[1][0])
+
+
+    // TODO Fix the chart.js integration
+    //check to see if globalChart is in use and destroy
+    if(globalChart != null){
         globalChart.destroy();
-    }
-    let _labels = [];
-    let _data = [];
-    let _borderColor = [];
-    let _backgroundColor = [];
-
-    for (let i = 0; i < _parsedData.length; i++) {
-        _labels.push(_parsedData[i][0])
-        _data.push(_parsedData[i][1])
-        // add colors
-        let randomColor = random_rgba();
-        _borderColor.push(randomColor)
-        _backgroundColor.push(randomColor)
+        console.log("chart destroyed");
     }
 
-    let dataForChart = {
-        labels: _labels,
+    // configuration object to be used in the charts.js instance
+    let colors = getColors(userDataToGraph[0][0].length)
+    let LoadedConfig = {
+        labels: userDataToGraph[0][0],
         datasets: [{
             label: 'Your Data',
-            data: _data,
-            borderColor: _borderColor,
+            data: userDataToGraph[1][0],
+            borderColor: colors.border,
             borderWidth: 1,
-            backgroundColor: _backgroundColor
+            backgroundColor: colors.background
         }]
     };
-    
-    console.log(dataForChart);
-    globalChart = new Chart(ctx,{
-        type: "bar",
-        data: dataForChart
-    });
-}
 
+    // create the chart
+    globalChart = new Chart(ctx, {
+        type: "bar",
+        data: LoadedConfig
+    });
+
+    // Update the navigation bar
+    document.getElementById("navBar1").style.backgroundColor = "Red"
+    document.getElementById("navBar2").style.backgroundColor = "Red"
+    
+    // display the export option on the layer 1 side menu
+    document.getElementById("exportGraphicArea").style.display = "flex";
+
+}
 
 // Helpers
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function getColors(n) {
+    let _borderColor = [];
+    let _backgroundColor = [];
+
+    for (let i = 0; i < n; i++) {
+        let randomColor = random_rgba();
+        _borderColor.push(randomColor)
+        _backgroundColor.push(randomColor)
+    }
+
+    return {
+        border: _borderColor,
+        background: _backgroundColor
+    }
 }
 
 function random_rgba() {
