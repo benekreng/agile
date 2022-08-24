@@ -379,7 +379,7 @@ canvas {
 
 
 /* Navigation Bar */
-.navigationBar {
+nav {
     background-color: inherit; 
     width:100%; 
     height:1%; 
