@@ -54,9 +54,11 @@ function randomize(){
         console.log("globalChart not defined");
         return;
     }
+    console.log(mainData)
     for (let i = 0; i < mainData.length; i++) {
         console.log(mainData[i])
-        let offset = Math.random() < 0.5 ? mainData[i] + getRandomInt(1,5) : mainData[i] - getRandomInt(1,5)
+        let item = Number(mainData[i])
+        let offset = Math.random() < 0.5 ? item + getRandomInt(1,5) : item - getRandomInt(1,5)
         mainData[i] = offset ;
     }
     globalChart.update();
@@ -124,13 +126,17 @@ function generateUserGraphs(){
         console.log("chart destroyed");
     }
 
+    // save data to globals
+    mainLabels = userDataToGraph[0][0]
+    mainData = userDataToGraph[1][0]
+
     // configuration object to be used in the charts.js instance
     let colors = getColors(userDataToGraph[0][0].length)
     mainConfig = {
-        labels: userDataToGraph[0][0],
+        labels: mainLabels,
         datasets: [{
             label: gFileName,
-            data: userDataToGraph[1][0],
+            data: mainData,
             borderColor: colors.border,
             borderWidth: 1,
             backgroundColor: colors.background
@@ -150,6 +156,9 @@ function generateUserGraphs(){
     
     // display the export option on the layer 1 side menu
     document.getElementById("exportGraphicArea").style.display = "flex";
+
+    //close the info pannel
+    closeInfo()
 
 }
 

@@ -49,6 +49,8 @@ input.addEventListener('change', function(e)
         document.getElementById("barChartBtn").style.display = "block";
         document.getElementById("doughnutChartBtn").style.display = "block";
         document.getElementById("polarChartBtn").style.display = "block";
+        document.getElementById("randomize").style.display = "block";
+
     }
 
 }, false)
