@@ -1,0 +1,423 @@
+Author : Kayaba Attribution 
+Date/Time :  Thu, 25 Aug 2022 09:53:02 -0400
+Commit : Merge branch 'main' of https://github.com/benekreng/agile into main
+Author : Kayaba Attribution 
+Date/Time :  Thu, 25 Aug 2022 09:52:51 -0400
+Commit : chore: save current commits
+Author : Kapthas59 
+Date/Time :  Thu, 25 Aug 2022 12:11:24 +0800
+Commit : Update readme.md
+Author : Kapthas59 
+Date/Time :  Thu, 25 Aug 2022 12:11:09 +0800
+Commit : Update readme.md
+Author : Kapthas59 
+Date/Time :  Thu, 25 Aug 2022 12:08:39 +0800
+Commit : Add files via upload
+Author : Kapthas59 
+Date/Time :  Thu, 25 Aug 2022 12:08:04 +0800
+Commit : Very minor code formatting
+Author : Kayaba Attribution 
+Date/Time :  Wed, 24 Aug 2022 19:09:00 -0400
+Commit : feat: showcase the dimensions of the charts on navbar
+Author : Kayaba Attribution 
+Date/Time :  Wed, 24 Aug 2022 18:51:32 -0400
+Commit : feat: integrate type change for csv chart and solve bugs
+Author : Kayaba Attribution 
+Date/Time :  Wed, 24 Aug 2022 16:59:13 -0400
+Commit : feat: fix conflicts
+Author : Kayaba Attribution 
+Date/Time :  Wed, 24 Aug 2022 16:56:44 -0400
+Commit : feat: refactor error managament and add custom errors
+Author : Kayaba Attribution 
+Date/Time :  Wed, 24 Aug 2022 16:12:57 -0400
+Commit : feat: refactor generateUserGraphs into chartJSIntegration
+Author : Kapthas59 
+Date/Time :  Thu, 25 Aug 2022 00:58:51 +0800
+Commit : Some CSS changes
+Author : Kapthas59 
+Date/Time :  Wed, 24 Aug 2022 23:16:53 +0800
+Commit : Add files via upload
+Author : Kapthas59 
+Date/Time :  Wed, 24 Aug 2022 23:14:34 +0800
+Commit : Create readme.md
+Author : Kapthas59 
+Date/Time :  Wed, 24 Aug 2022 23:00:44 +0800
+Commit : minor semantic html tag change
+Author : Kapthas59 
+Date/Time :  Wed, 24 Aug 2022 13:50:48 +0800
+Commit : More accessibility changes
+Author : Kayaba Attribution 
+Date/Time :  Tue, 23 Aug 2022 18:28:40 -0400
+Commit : feat: responive chart integration
+Author : Kayaba Attribution 
+Date/Time :  Tue, 23 Aug 2022 17:49:53 -0400
+Commit : Merge branch 'main' of https://github.com/benekreng/agile into main
+Author : benekreng 
+Date/Time :  Tue, 23 Aug 2022 20:22:54 +0200
+Commit : Added some alt tags
+Author : Connor King 
+Date/Time :  Sun, 21 Aug 2022 15:27:02 +0100
+Commit : meeting notes from 21 Aug 22 // timeline update
+Author : Kayaba Attribution 
+Date/Time :  Sat, 20 Aug 2022 17:33:18 -0400
+Commit : feat: clean up unused code
+Author : Kayaba Attribution 
+Date/Time :  Sat, 20 Aug 2022 17:24:34 -0400
+Commit : feat: basic chart working (need to refactor to support more than 2 columns)
+Author : Kapthas59 
+Date/Time :  Thu, 18 Aug 2022 22:49:42 +0800
+Commit : Options menu css fix
+Author : Kapthas59 
+Date/Time :  Wed, 17 Aug 2022 20:08:17 +0800
+Commit : Info menu css fix
+Author : Connor King 
+Date/Time :  Wed, 17 Aug 2022 10:57:27 +0100
+Commit : Added information to the help menu
+Author : Kapthas59 
+Date/Time :  Tue, 16 Aug 2022 15:18:17 +0800
+Commit : Added info menu without content
+Author : Kapthas59 
+Date/Time :  Tue, 16 Aug 2022 13:02:23 +0800
+Commit : CSS fixes
+Author : Connor King 
+Date/Time :  Mon, 15 Aug 2022 21:14:48 +0100
+Commit : Listbox added for export functionality
+Author : TheBigMahooney 
+Date/Time :  Sun, 14 Aug 2022 16:12:22 +0100
+Commit : meeting logs and timeline updates // T&E period reduced to 1 week to facilitate MVP completion
+Author : Kapthas59 
+Date/Time :  Mon, 8 Aug 2022 15:02:33 +0800
+Commit : Some css fixes
+Author : Connor King 
+Date/Time :  Sun, 7 Aug 2022 17:19:14 +0100
+Commit : Export now downloads the file directly instead of pushing it to a new tab // still to amend the radio buttons to a drop down list
+Author : kayaba-attribution 
+Date/Time :  Sun, 7 Aug 2022 10:24:02 -0400
+Commit : Update README.md
+Author : Connor King 
+Date/Time :  Sun, 7 Aug 2022 14:10:02 +0100
+Commit : broken charts.js with user inputed data
+Author : Kapthas59 
+Date/Time :  Sun, 7 Aug 2022 18:19:46 +0800
+Commit : Some css fixes including the checkboxes
+Author : Connor King 
+Date/Time :  Sat, 6 Aug 2022 16:28:14 +0100
+Commit : Finalised Code for user uploaded data. The system can now split the data in response to the users parsed data
+Author : Connor King 
+Date/Time :  Sat, 6 Aug 2022 11:01:28 +0100
+Commit : Functional file parse and dynamic button generation // amended Ux to add and remove elements depending on the phase of program execution
+Author : Kapthas59 
+Date/Time :  Sat, 6 Aug 2022 16:01:26 +0800
+Commit : Changes to select element
+Author : Kapthas59 
+Date/Time :  Sat, 6 Aug 2022 15:15:03 +0800
+Commit : Some CSS improvements
+Author : Lasana 
+Date/Time :  Thu, 4 Aug 2022 21:10:23 +0100
+Commit : parser function addition
+Author : Lasana 
+Date/Time :  Thu, 4 Aug 2022 21:06:31 +0100
+Commit : Commit
+Author : benekreng 
+Date/Time :  Wed, 3 Aug 2022 18:27:25 +0200
+Commit : Option Popup
+Author : benekreng 
+Date/Time :  Tue, 2 Aug 2022 19:15:24 +0200
+Commit : Option Pop up Menu
+Author : TheBigMahooney 
+Date/Time :  Sun, 31 Jul 2022 16:33:54 +0100
+Commit : Meeting log from 31 Jul 22 // timeline update
+Author : TheBigMahooney 
+Date/Time :  Sun, 31 Jul 2022 15:36:15 +0100
+Commit : Updated backend fixes
+Author : Kapthas59 
+Date/Time :  Thu, 28 Jul 2022 18:30:31 +0800
+Commit : Update index.html
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:48:09 +0800
+Commit : Rename 20220717-Meeting_Log9_Sprint4 to 20220717-Meeting_Log9_Sprint4.md
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:43:54 +0800
+Commit : Improved formatting
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:39:55 +0800
+Commit : Improved formatting
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:39:03 +0800
+Commit : Improved formating (tab = 4 whitespace)
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:38:26 +0800
+Commit : Improved formatting (tab = 4 whitespace)
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:37:34 +0800
+Commit : Improved formating - tab = 4space
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:36:20 +0800
+Commit : Improved formating
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 14:35:42 +0800
+Commit : Update style.css
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 13:54:29 +0800
+Commit : Update style.css
+Author : Kapthas59 
+Date/Time :  Tue, 26 Jul 2022 13:54:05 +0800
+Commit : Update index.html
+Author : Kapthas59 
+Date/Time :  Mon, 25 Jul 2022 19:56:25 +0800
+Commit : The file browser does not appear when pre loaded data is selected.
+Author : Kapthas59 
+Date/Time :  Mon, 25 Jul 2022 19:48:46 +0800
+Commit : Update style.css
+Author : Kapthas59 
+Date/Time :  Mon, 25 Jul 2022 19:47:24 +0800
+Commit : Changes in progress-bar div class
+Author : TheBigMahooney 
+Date/Time :  Sun, 24 Jul 2022 20:10:55 +0100
+Commit : updated meeting log from 17 Jul 22
+Author : TheBigMahooney 
+Date/Time :  Sun, 24 Jul 2022 14:29:19 +0100
+Commit : Finalised Navigation Bar. stage 1 is data load, stage 2 is generating the chart, stage 3 is exporting the chart
+Author : Kayaba Attribution 
+Date/Time :  Fri, 22 Jul 2022 20:03:10 -0400
+Commit : feat: fix incorrect labels and data + dynamic random colors
+Author : Kayaba Attribution 
+Date/Time :  Fri, 22 Jul 2022 19:55:47 -0400
+Commit : feat: create data based on parsed CSV
+Author : Kayaba Attribution 
+Date/Time :  Fri, 22 Jul 2022 19:34:50 -0400
+Commit : Merge branch 'main' of https://github.com/benekreng/agile into main
+Author : Kayaba Attribution 
+Date/Time :  Fri, 22 Jul 2022 19:34:47 -0400
+Commit : m
+Author : Connor King 
+Date/Time :  Thu, 21 Jul 2022 22:18:04 +0100
+Commit : Added navigation bar at the top of the page // first block of the navigation bar is functional with data source selections // reworked file structure for code // cleaned up Javascript
+Author : Lasana 
+Date/Time :  Thu, 21 Jul 2022 00:18:44 +0100
+Commit : Committing to main
+Author : Kayaba Attribution 
+Date/Time :  Mon, 18 Jul 2022 10:29:56 -0400
+Commit : chore: move chart JS from backend to JS folder
+Author : Kayaba Attribution 
+Date/Time :  Sun, 17 Jul 2022 11:09:52 -0400
+Commit : feat: error render on page + button to close the div
+Author : TheBigMahooney 
+Date/Time :  Sun, 17 Jul 2022 13:45:29 +0100
+Commit : Export button added
+Author : Kayaba Attribution 
+Date/Time :  Sat, 16 Jul 2022 23:00:04 -0400
+Commit : Merge branch 'main' of https://github.com/benekreng/agile into app
+Author : Kayaba Attribution 
+Date/Time :  Sat, 16 Jul 2022 23:00:01 -0400
+Commit : feat: remove tailwind vite app
+Author : Kayaba Attribution 
+Date/Time :  Sat, 16 Jul 2022 22:59:32 -0400
+Commit : feat: chartJS integration (preloaded data)
+Author : Lasana 
+Date/Time :  Sun, 17 Jul 2022 01:43:55 +0100
+Commit : Add files via upload
+Author : Kayaba Attribution 
+Date/Time :  Sat, 16 Jul 2022 19:50:37 -0400
+Commit : Merge branch 'main' of https://github.com/benekreng/agile into app
+Author : Kapthas59 
+Date/Time :  Mon, 11 Jul 2022 14:33:28 +0800
+Commit : Update script.js
+Author : Kapthas59 
+Date/Time :  Mon, 11 Jul 2022 14:32:46 +0800
+Commit : Update index.html
+Author : Kapthas59 
+Date/Time :  Mon, 11 Jul 2022 14:31:35 +0800
+Commit : Update style.css
+Author : TheBigMahooney 
+Date/Time :  Sun, 10 Jul 2022 17:40:53 +0100
+Commit : updated meeting notes and timeline from 10 Jul 22
+Author : Kayaba Attribution 
+Date/Time :  Sun, 10 Jul 2022 12:37:35 -0400
+Commit : Merge branch 'main' of https://github.com/benekreng/agile into app merge changes from main
+Author : TheBigMahooney 
+Date/Time :  Sun, 10 Jul 2022 17:20:47 +0100
+Commit : Minor front end tweaks // Backend file load, generate graphs button implementation // Front end file load button broken, charts.js implementation required
+Author : Connor King 
+Date/Time :  Sun, 10 Jul 2022 13:05:01 +0100
+Commit : Merge branch 'main' of https://github.com/benekreng/agile
+Author : Connor King 
+Date/Time :  Sun, 10 Jul 2022 13:04:42 +0100
+Commit : CSV file manager code
+Author : Kapthas59 
+Date/Time :  Sun, 10 Jul 2022 19:34:15 +0800
+Commit : Add files via upload
+Author : Kapthas59 
+Date/Time :  Sun, 10 Jul 2022 19:33:56 +0800
+Commit : Delete style.css
+Author : Kapthas59 
+Date/Time :  Sun, 10 Jul 2022 19:29:57 +0800
+Commit : Update readme.md
+Author : Kapthas59 
+Date/Time :  Sun, 10 Jul 2022 19:28:07 +0800
+Commit : Add files via upload
+Author : Kapthas59 
+Date/Time :  Sun, 10 Jul 2022 19:27:33 +0800
+Commit : Create readme.md
+Author : Kapthas59 
+Date/Time :  Sun, 10 Jul 2022 19:26:40 +0800
+Commit : Add files via upload
+Author : Kapthas59 
+Date/Time :  Sun, 10 Jul 2022 19:25:49 +0800
+Commit : Create readme.md
+Author : Kayaba Attribution 
+Date/Time :  Fri, 8 Jul 2022 14:39:52 -0400
+Commit : feat: commit app as file not as submodule
+Author : Kayaba Attribution 
+Date/Time :  Fri, 8 Jul 2022 14:38:40 -0400
+Commit : feat: remove app and fix submodule
+Author : Kayaba Attribution 
+Date/Time :  Fri, 8 Jul 2022 14:30:11 -0400
+Commit : feat: demo website tailwind
+Author : benekreng 
+Date/Time :  Wed, 6 Jul 2022 15:17:19 +0200
+Commit : Html
+Author : TheBigMahooney 
+Date/Time :  Sun, 3 Jul 2022 15:48:36 +0100
+Commit : Added code directory
+Author : TheBigMahooney 
+Date/Time :  Sun, 3 Jul 2022 15:39:27 +0100
+Commit : Meeting log from 3 Jul 22 // timeline update
+Author : TheBigMahooney 
+Date/Time :  Sun, 26 Jun 2022 15:35:27 +0100
+Commit : Finalised midterm report
+Author : TheBigMahooney 
+Date/Time :  Tue, 21 Jun 2022 20:19:35 +0100
+Commit : Missing group roles updated
+Author : Connor King 
+Date/Time :  Sun, 12 Jun 2022 21:54:04 +0100
+Commit : Updated meeting log from 12 Jun 2022
+Author : Lasana 
+Date/Time :  Sun, 12 Jun 2022 15:20:07 +0100
+Commit : Merge branch 'main' of https://github.com/benekreng/agile
+Author : Lasana 
+Date/Time :  Sun, 12 Jun 2022 15:17:28 +0100
+Commit : Merge branch 'main' of https://github.com/benekreng/agile
+Author : benekreng 
+Date/Time :  Sun, 12 Jun 2022 16:07:43 +0200
+Commit : Merge branch 'main' of https://github.com/benekreng/agile
+Author : benekreng 
+Date/Time :  Sun, 12 Jun 2022 16:07:39 +0200
+Commit : pseudocode
+Author : TheBigMahooney 
+Date/Time :  Sun, 5 Jun 2022 16:15:30 +0100
+Commit : Meeting log from 5 Jun 2022 // Timeline update to include 7 Sprints for the software development post midterm // 19 June 2022 deadline added to objectives for edits to the Requirements
+Author : Lasana 
+Date/Time :  Sun, 5 Jun 2022 14:53:28 +0100
+Commit : Uploading
+Author : Connor King 
+Date/Time :  Sat, 4 Jun 2022 12:27:31 +0100
+Commit : Wireframes uploaded by Connor // Admin file added to hold the midterm question paper and other admin from UoL // Further work on the Requirments files needed for the midterm
+Author : TheBigMahooney 
+Date/Time :  Sun, 29 May 2022 16:27:28 +0100
+Commit : Uodated meeting log and timeline following meeting 29 May 22
+Author : benekreng 
+Date/Time :  Sun, 29 May 2022 16:55:02 +0200
+Commit : Merge branch 'main' of https://github.com/benekreng/agile
+Author : Kapthas59 
+Date/Time :  Sun, 29 May 2022 22:36:14 +0800
+Commit : Add files via upload
+Author : benekreng 
+Date/Time :  Sun, 29 May 2022 16:35:21 +0200
+Commit : Merge branch 'main' of https://github.com/benekreng/agile
+Author : Lasana 
+Date/Time :  Sun, 29 May 2022 15:26:52 +0100
+Commit : Commit to main from KLM
+Author : benekreng 
+Date/Time :  Sun, 29 May 2022 16:14:29 +0200
+Commit : Wireframes 1 and 2 and 3
+Author : Lasana 
+Date/Time :  Sun, 29 May 2022 15:04:52 +0100
+Commit : Create Lasana
+Author : benekreng 
+Date/Time :  Sun, 29 May 2022 15:43:51 +0200
+Commit : Requirement Original Text Doc
+Author : kayaba-attribution 
+Date/Time :  Thu, 26 May 2022 22:42:20 -0400
+Commit : Update README.md
+Author : Kayaba Attribution 
+Date/Time :  Thu, 26 May 2022 22:40:57 -0400
+Commit : Merge branch 'main' of https://github.com/benekreng/agile into main
+Author : Kayaba Attribution 
+Date/Time :  Thu, 26 May 2022 22:39:19 -0400
+Commit : feat: 🔥 SvelteKit Demo 🔥
+Author : Connor King 
+Date/Time :  Thu, 26 May 2022 21:44:49 +0100
+Commit : Updated Requirements documetation [deliverables.md // functional_specifications.md // project_scope.md]
+Author : TheBigMahooney 
+Date/Time :  Wed, 25 May 2022 22:29:23 +0100
+Commit : Delete .DS_Store
+Author : TheBigMahooney 
+Date/Time :  Wed, 25 May 2022 22:29:15 +0100
+Commit : Delete .~lock.20220507-Meeting1_Log.docx#
+Author : TheBigMahooney 
+Date/Time :  Wed, 25 May 2022 22:28:45 +0100
+Commit : Delete .DS_Store
+Author : TheBigMahooney 
+Date/Time :  Wed, 25 May 2022 22:28:16 +0100
+Commit : Delete .DS_Store
+Author : Connor King 
+Date/Time :  Wed, 25 May 2022 22:17:26 +0100
+Commit : Updated Requirements -> Functional specification
+Author : Connor King 
+Date/Time :  Wed, 25 May 2022 21:39:52 +0100
+Commit : Pseudocode added
+Author : Kapthas59 
+Date/Time :  Wed, 25 May 2022 17:58:00 +0800
+Commit : Delete temp
+Author : Kapthas59 
+Date/Time :  Wed, 25 May 2022 17:57:42 +0800
+Commit : Add files via upload
+Author : Kapthas59 
+Date/Time :  Wed, 25 May 2022 17:57:19 +0800
+Commit : Create temp
+Author : TheBigMahooney 
+Date/Time :  Mon, 23 May 2022 22:31:47 +0100
+Commit : Delete .DS_Store
+Author : Connor King 
+Date/Time :  Mon, 23 May 2022 22:25:50 +0100
+Commit : Updated requirements files with template data
+Author : Connor King 
+Date/Time :  Mon, 23 May 2022 21:56:29 +0100
+Commit : Added draft requirements information found on the ASP from the past midterm
+Author : Connor King 
+Date/Time :  Mon, 23 May 2022 15:39:17 +0100
+Commit : initial pseudocode code
+Author : TheBigMahooney 
+Date/Time :  Sun, 22 May 2022 19:46:58 +0100
+Commit : Added placemat for missing meeting log for meeting 2
+Author : TheBigMahooney 
+Date/Time :  Sun, 22 May 2022 19:43:16 +0100
+Commit : Updated team meeting notes for 22 May
+Author : TheBigMahooney 
+Date/Time :  Sun, 22 May 2022 19:18:35 +0100
+Commit : Timeline updated following team meeting 3 on 22 may 22
+Author : Kayaba Attribution 
+Date/Time :  Sun, 22 May 2022 10:31:22 -0400
+Commit : feat: Meeting 1 from docx to md
+Author : Kayaba Attribution 
+Date/Time :  Sun, 22 May 2022 10:24:24 -0400
+Commit : feat: Update Readme
+Author : TheBigMahooney 
+Date/Time :  Sun, 22 May 2022 14:45:25 +0100
+Commit : Add files via upload
+Author : TheBigMahooney 
+Date/Time :  Sun, 22 May 2022 14:33:12 +0100
+Commit : New fil structure added and requirements inputted
+Author : TheBigMahooney 
+Date/Time :  Sun, 22 May 2022 14:06:51 +0100
+Commit : File structure added
+Author : TheBigMahooney 
+Date/Time :  Thu, 12 May 2022 13:43:01 +0100
+Commit : Project Timeline
+Author : TheBigMahooney 
+Date/Time :  Thu, 12 May 2022 13:40:47 +0100
+Commit : Meeting 1 notes
+Author : benekreng 
+Date/Time :  Sat, 7 May 2022 18:37:03 +0200
+Commit : Initial commit
