@@ -115,6 +115,7 @@ function generateUserGraphs(){
     console.log(userTitlesToGraph)
     console.log(userDataToGraph)
     if (userDataToGraph.length == 1) {customError("You must choose at least 2 columns"); return};
+    if (userDataToGraph.length > 2) {customError("You must choose at most 2 columns"); return};
     console.log(userDataToGraph[0][0])
     console.log(userDataToGraph[1][0])
 
