@@ -26,7 +26,7 @@ input.addEventListener('change', function(e)
         loadedData = reader.result.split('\n').map(function(line){return line.split(',')})
         
         // delete chart if exists
-        globalChart.destroy();
+        if (globalChart){globalChart.destroy();}
 
         // Split the data into titles and data
         masterData = parser(loadedData)
