@@ -1,0 +1,839 @@
+commit 71ea42c6e3c77caeb8c35cad65f896d0729efa60
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Wed Aug 24 19:09:00 2022 -0400
+
+    feat: showcase the dimensions of the charts on navbar
+
+commit a12b11769285ab1be2bfd069a163f6570eac05f5
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Wed Aug 24 18:51:32 2022 -0400
+
+    feat: integrate type change for csv chart and solve bugs
+
+commit 2cc0c208ab3b56b846b71f7749d248b7891bbb14
+Merge: 29edb06 6221909
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Wed Aug 24 16:59:13 2022 -0400
+
+    feat: fix conflicts
+
+commit 29edb06ea30ffaf33b9106a3e05c04567f197a32
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Wed Aug 24 16:56:44 2022 -0400
+
+    feat: refactor error managament and add custom errors
+
+commit c766c3032a56c5602b0bad8b2a4c18286e880a07
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Wed Aug 24 16:12:57 2022 -0400
+
+    feat: refactor generateUserGraphs into chartJSIntegration
+
+commit 62219096c4448754dd12e76d28aa3c3e95a50379
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Thu Aug 25 00:58:51 2022 +0800
+
+    Some CSS changes
+
+commit 8868c01dc4cb9e0774edc7e6820dccfa4e1cb63d
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Wed Aug 24 23:16:53 2022 +0800
+
+    Add files via upload
+
+commit 3f57d4b17b081769cab20c0a16794a81c25c6946
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Wed Aug 24 23:14:34 2022 +0800
+
+    Create readme.md
+
+commit 9ceda270a16fedb318ee9c17c9b439680bda23d4
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Wed Aug 24 23:00:44 2022 +0800
+
+    minor semantic html tag change
+
+commit 6b7292d38636b12faed7a302c3287caf219806bd
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Wed Aug 24 13:50:48 2022 +0800
+
+    More accessibility changes
+
+commit ac86c9d6def2355496ad4e9306fe41e894cf7e65
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Tue Aug 23 18:28:40 2022 -0400
+
+    feat: responive chart integration
+
+commit fec24886765de9857dc080d81567f6a7160f8a9e
+Merge: dc0b08b 585b7ab
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Tue Aug 23 17:49:53 2022 -0400
+
+    Merge branch 'main' of https://github.com/benekreng/agile into main
+
+commit 585b7ab6d309b8ca3df61e10a466cbe51e2ecb19
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Tue Aug 23 20:22:54 2022 +0200
+
+    Added some alt tags
+
+commit c86f4c413c9150615df9a087b0541a3a5ab027cc
+Author: Connor King <connor1king@me.com>
+Date:   Sun Aug 21 15:27:02 2022 +0100
+
+    meeting notes from 21 Aug 22 // timeline update
+
+commit dc0b08b1151b7262ad2685d8b28f949c8632145e
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sat Aug 20 17:33:18 2022 -0400
+
+    feat: clean up unused code
+
+commit e6173c22ba1a759dd32d6099909960ca12acd673
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sat Aug 20 17:24:34 2022 -0400
+
+    feat: basic chart working (need to refactor to support more than 2 columns)
+
+commit f3b9a09c03d1e30466b2263a9a89c8c6142b8758
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Thu Aug 18 22:49:42 2022 +0800
+
+    Options menu css fix
+
+commit 08cbc67ec55edbe3ee95ea25ba1ceb8f1e40fed1
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Wed Aug 17 20:08:17 2022 +0800
+
+    Info menu css fix
+
+commit 80a933b15cf3d2cc9345e6dda9fc583d36da3f01
+Author: Connor King <connor1king@me.com>
+Date:   Wed Aug 17 10:57:27 2022 +0100
+
+    Added information to the help menu
+
+commit fa6c67b67db88aefdcae34126c986dd41e25a1a2
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Tue Aug 16 15:18:17 2022 +0800
+
+    Added info menu without content
+
+commit 717f98dd0a39be3084a4ce19d92e14dd503ed917
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Tue Aug 16 13:02:23 2022 +0800
+
+    CSS fixes
+    
+    (I will update css further after david has completed the mvp)
+
+commit 877141005922901962c7ecc4dec88342faa2b7ad
+Author: Connor King <connor1king@me.com>
+Date:   Mon Aug 15 21:14:48 2022 +0100
+
+    Listbox added for export functionality
+
+commit c5b14378322fa758a7e25956e1f8d33eca62ffec
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Aug 14 16:12:22 2022 +0100
+
+    meeting logs and timeline updates // T&E period reduced to 1 week to facilitate MVP completion
+
+commit 029169a1de7a062a15d7b73bbe9d9ecef0e9e39b
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Mon Aug 8 15:02:33 2022 +0800
+
+    Some css fixes
+
+commit 2c0fc789cb55ef44c23cd7526e91d55973fdff82
+Author: Connor King <connor1king@me.com>
+Date:   Sun Aug 7 17:19:14 2022 +0100
+
+    Export now downloads the file directly instead of pushing it to a new tab // still to amend the radio buttons to a drop down list
+
+commit c0f0a4a97572bc2793e07fb5f5c655daa0a28c11
+Author: kayaba-attribution <63566185+Kayaba-Attribution@users.noreply.github.com>
+Date:   Sun Aug 7 10:24:02 2022 -0400
+
+    Update README.md
+
+commit dd5ea88fc3d39da3d793852dcdd6a913bbf5fb78
+Author: Connor King <connor1king@me.com>
+Date:   Sun Aug 7 14:10:02 2022 +0100
+
+    broken charts.js with user inputed data
+
+commit 6616b4cd23779f087851fb6ad2c054798b6e27ae
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Sun Aug 7 18:19:46 2022 +0800
+
+    Some css fixes including the checkboxes
+
+commit ff868266fd985474f4ac037b32aecf74abc8d24b
+Author: Connor King <connor1king@me.com>
+Date:   Sat Aug 6 16:28:14 2022 +0100
+
+    Finalised Code for user uploaded data. The system can now split the data in response to the users parsed data
+
+commit 31ac49ce856d98d3d136fac4c7b14d821811a96a
+Author: Connor King <connor1king@me.com>
+Date:   Sat Aug 6 11:01:28 2022 +0100
+
+    Functional file parse and dynamic button generation // amended Ux to add and remove elements depending on the phase of program execution
+
+commit da5ea6307d16ed99aafaa6fe5a16f7a3b91c5820
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Sat Aug 6 16:01:26 2022 +0800
+
+    Changes to select element
+
+commit 53665eb07ee425aac67b048e02e8dc00bfa567df
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Sat Aug 6 15:15:03 2022 +0800
+
+    Some CSS improvements
+
+commit 2507150c95d8d9c4a0fe0bf6712090dfc954655a
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Thu Aug 4 21:10:23 2022 +0100
+
+    parser function addition
+
+commit c7371af0ea88ae564f6f6c0d85a15b1e8b378f63
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Thu Aug 4 21:06:31 2022 +0100
+
+    Commit
+
+commit 9706b63a24f7cf886bfee01fc28d191dec0a2d59
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Wed Aug 3 18:27:25 2022 +0200
+
+    Option Popup
+    
+    Option Popup with placeholder options
+
+commit 975298282f8fe685d37d47fb7f4a6fe86c740ac6
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Tue Aug 2 19:15:24 2022 +0200
+
+    Option Pop up Menu
+    
+    Added "more option" pop up menu with placeholder buttons
+
+commit 4853c3519e0134716c0b1b7626c61e7b5c1f5314
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 31 16:33:54 2022 +0100
+
+    Meeting log from 31 Jul 22 // timeline update
+
+commit 8d04f37ac46b66362a3cce6f54ea8f183338ed6a
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 31 15:36:15 2022 +0100
+
+    Updated backend fixes
+
+commit 9f2d1732ea6b6d166a12a9e040d85feda782af34
+Author: Kapthas59 <kapthas59@gmail.com>
+Date:   Thu Jul 28 18:30:31 2022 +0800
+
+    Update index.html
+
+commit cd646e35bd9029322c64351d20c34e15331143a4
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:48:09 2022 +0800
+
+    Rename 20220717-Meeting_Log9_Sprint4 to 20220717-Meeting_Log9_Sprint4.md
+
+commit 5cc5d5495cc3cd58f02dceb626437ab8d3289eda
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:43:54 2022 +0800
+
+    Improved formatting
+
+commit 229172b29f6eee1a22c92e6570b9233ecb1e2ac6
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:39:55 2022 +0800
+
+    Improved formatting
+
+commit fbe6206875f10571bf19c86a96ceb28fd67eb8cb
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:39:03 2022 +0800
+
+    Improved formating (tab = 4 whitespace)
+
+commit a30713108aa247daf20c878e32ba5d31bea42131
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:38:26 2022 +0800
+
+    Improved formatting (tab = 4 whitespace)
+
+commit 15b8b2eccae01c73a5ebfc3b6212800855786143
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:37:34 2022 +0800
+
+    Improved formating - tab = 4space
+
+commit 1610a543a1f56c308e7502f04614b5764cf9c72e
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:36:20 2022 +0800
+
+    Improved formating
+
+commit 8ad22d357b9bc912a57fc70ea68659683326809a
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 14:35:42 2022 +0800
+
+    Update style.css
+
+commit 7d51cd9d6d048ccdf39eb2368a6ee4eaa64e0f11
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 13:54:29 2022 +0800
+
+    Update style.css
+
+commit 2a5cb29c7446182ceba05a4dc14c40560cb3a137
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Tue Jul 26 13:54:05 2022 +0800
+
+    Update index.html
+
+commit a67b5a8ee441e9e471dfdb4230a11cd67443eeb3
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Mon Jul 25 19:56:25 2022 +0800
+
+    The file browser does not appear when pre loaded data is selected.
+
+commit aeeba6501fb6d3704515278e14a94c098660cc30
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Mon Jul 25 19:48:46 2022 +0800
+
+    Update style.css
+
+commit 2a50f6eb188dfa374aa41fc1a6518d17856f47bb
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Mon Jul 25 19:47:24 2022 +0800
+
+    Changes in progress-bar div class
+
+commit b3df3a87c9065cec1a8410152a2c673525130df7
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 24 20:10:55 2022 +0100
+
+    updated meeting log from 17 Jul 22
+
+commit 10d482e60fd7a67cf010b70914f71d233c5d0809
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 24 14:29:19 2022 +0100
+
+    Finalised Navigation Bar. stage 1 is data load, stage 2 is generating the chart, stage 3 is exporting the chart
+
+commit 197838376abd56811cee8ee7480baa42b5e191e4
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Fri Jul 22 20:03:10 2022 -0400
+
+    feat: fix incorrect labels and data + dynamic random colors
+
+commit 6cb80f1084e0f93bcc421fd5462a620c0fdc210c
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Fri Jul 22 19:55:47 2022 -0400
+
+    feat: create data based on parsed CSV
+
+commit 5b0f7ad1ce6158e7391345445ee9277affeb4df4
+Merge: 3e8a5b0 74cb1b4
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Fri Jul 22 19:34:50 2022 -0400
+
+    Merge branch 'main' of https://github.com/benekreng/agile into main
+
+commit 3e8a5b078452b414f06bca01805829847b0bfb9c
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Fri Jul 22 19:34:47 2022 -0400
+
+    m
+
+commit 74cb1b4535f5d34e33ef0b83cec664d9e858d8b2
+Author: Connor King <connor1king@me.com>
+Date:   Thu Jul 21 22:18:04 2022 +0100
+
+    Added navigation bar at the top of the page // first block of the navigation bar is functional with data source selections // reworked file structure for code // cleaned up Javascript
+
+commit 6dd4ce88131aa7984df26ebc057ab6d8b3447ba0
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Thu Jul 21 00:18:44 2022 +0100
+
+    Committing to main
+
+commit 5f721aa53bb7f7aef83cf3237624064f82cfe465
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Mon Jul 18 10:29:56 2022 -0400
+
+    chore: move chart JS from backend to JS folder
+
+commit e1e17203a111cbc1c94223d0efe92e839949ba74
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sun Jul 17 11:09:52 2022 -0400
+
+    feat: error render on page + button to close the div
+
+commit 3eba4d0ec87cae5c5a04dbb928683bc54769032a
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 17 13:45:29 2022 +0100
+
+    Export button added
+
+commit 6edf6bd264ff9ca53d3b450f91d0b34d92fa1df4
+Merge: 973cf43 03177b3
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sat Jul 16 23:00:04 2022 -0400
+
+    Merge branch 'main' of https://github.com/benekreng/agile into app
+
+commit 973cf431ec4c69eba40e3df8820c4d421a03d952
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sat Jul 16 23:00:01 2022 -0400
+
+    feat: remove tailwind vite app
+
+commit d4cbdff66718c5c0607b4d044a718517f9578e4a
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sat Jul 16 22:59:32 2022 -0400
+
+    feat: chartJS integration (preloaded data)
+
+commit 03177b3e36a7a10e35694f34b6381e71e2f13f1d
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Sun Jul 17 01:43:55 2022 +0100
+
+    Add files via upload
+
+commit cefef5439a1638523bf866b806b6298e101d2c11
+Merge: 2ddd44d 886ea97
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sat Jul 16 19:50:37 2022 -0400
+
+    Merge branch 'main' of https://github.com/benekreng/agile into app
+
+commit 886ea97607fd0d8b90e09627f7b96443bee89391
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Mon Jul 11 14:33:28 2022 +0800
+
+    Update script.js
+
+commit 5dc8a12a071933550e3a4f3dbfc1d8d413410f88
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Mon Jul 11 14:32:46 2022 +0800
+
+    Update index.html
+
+commit 85546aabbdbbd94f235714da3b771395f489f876
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Mon Jul 11 14:31:35 2022 +0800
+
+    Update style.css
+
+commit 673d6cf2e28000c045ed0fceb9c47071673a8008
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 10 17:40:53 2022 +0100
+
+    updated meeting notes and timeline from 10 Jul 22
+
+commit 2ddd44ddcdf0d57fbbd2663b50f9ba33f34a99f3
+Merge: 01e703c 7744dd9
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sun Jul 10 12:37:35 2022 -0400
+
+    Merge branch 'main' of https://github.com/benekreng/agile into app
+    merge changes from main
+
+commit 7744dd94503f370fbca6bf2a50a88f195b6280da
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 10 17:20:47 2022 +0100
+
+    Minor front end tweaks // Backend file load, generate graphs button implementation // Front end file load button broken, charts.js implementation required
+
+commit 43c071ce251271b8bcaa48b2e895844f7b8c45a0
+Merge: 89d15f4 c1c1273
+Author: Connor King <connor1king@me.com>
+Date:   Sun Jul 10 13:05:01 2022 +0100
+
+    Merge branch 'main' of https://github.com/benekreng/agile
+
+commit 89d15f4c8276a35adeb7d1714b0b39ce3a97645a
+Author: Connor King <connor1king@me.com>
+Date:   Sun Jul 10 13:04:42 2022 +0100
+
+    CSV file manager code
+
+commit c1c12739f040ec52bad641d87d9fe126f84693f4
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun Jul 10 19:34:15 2022 +0800
+
+    Add files via upload
+
+commit 1a8a883881cbfaf1fc3c97ead848e1c8d48387f0
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun Jul 10 19:33:56 2022 +0800
+
+    Delete style.css
+
+commit deb47ed177a9123fa7dc07535832498d0e293713
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun Jul 10 19:29:57 2022 +0800
+
+    Update readme.md
+
+commit 71a63b15022c67c04e155c2446aabbc1b04b6897
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun Jul 10 19:28:07 2022 +0800
+
+    Add files via upload
+
+commit 21a2a2db7005967c9021e8397bd088c206db247b
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun Jul 10 19:27:33 2022 +0800
+
+    Create readme.md
+
+commit d953eb1a46c257343003b44f2fb88be6f81eb113
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun Jul 10 19:26:40 2022 +0800
+
+    Add files via upload
+
+commit b61fe385d209557be252faa1c8b01590f3f1f744
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun Jul 10 19:25:49 2022 +0800
+
+    Create readme.md
+
+commit 01e703c16a8557ab5a7919ee338b487094f61411
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Fri Jul 8 14:39:52 2022 -0400
+
+    feat: commit app as file not as submodule
+
+commit 5b66f9e048aef0f923315eaf076cd9fa7864f55a
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Fri Jul 8 14:38:40 2022 -0400
+
+    feat: remove app and fix submodule
+
+commit 3f1ebae440f78f33c7753cb813cfa71b1cbee20a
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Fri Jul 8 14:30:11 2022 -0400
+
+    feat: demo website tailwind
+
+commit 900bf1686c1cd7580c6769ac39f20cd23d5e9c84
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Wed Jul 6 15:17:19 2022 +0200
+
+    Html
+    
+    Pure html for first page called uploadNoCss
+    
+    My messed up attemped for css retractable menu
+
+commit b4398a35d710f79557562c84ac8bc78c9ee8b109
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 3 15:48:36 2022 +0100
+
+    Added code directory
+
+commit 0775866f237ef92c28d613373e9eab8575fd9e60
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jul 3 15:39:27 2022 +0100
+
+    Meeting log from 3 Jul 22 // timeline update
+
+commit b0fe386eb21a4859ac309960ee92d16b3aeec47e
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Sun Jun 26 15:35:27 2022 +0100
+
+    Finalised midterm report
+    
+    .doc and .pdf files uploaded
+
+commit 82666310e527f0ce18a26fbe03b24e533e3c6c11
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Tue Jun 21 20:19:35 2022 +0100
+
+    Missing group roles updated
+
+commit abb2ccbb993e9a93195400236488fddda946b208
+Author: Connor King <connor1king@me.com>
+Date:   Sun Jun 12 21:54:04 2022 +0100
+
+    Updated meeting log from 12 Jun 2022
+
+commit 7a72d854be418fc2ea29c6c2e06c3731aa7f9e44
+Merge: 48f43aa 1f5dfe1
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Sun Jun 12 15:20:07 2022 +0100
+
+    Merge branch 'main' of https://github.com/benekreng/agile
+
+commit 48f43aad28659ee39df2f2dfad13efe29bcc1eca
+Merge: 470b656 aec2ea3
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Sun Jun 12 15:17:28 2022 +0100
+
+    Merge branch 'main' of https://github.com/benekreng/agile
+
+commit 1f5dfe195ab9fa8fcdb7b79aa2a680fdde2c083e
+Merge: 3a40902 2d8b6ef
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Sun Jun 12 16:07:43 2022 +0200
+
+    Merge branch 'main' of https://github.com/benekreng/agile
+
+commit 3a40902485c68d6afabd5802a5783566de754d05
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Sun Jun 12 16:07:39 2022 +0200
+
+    pseudocode
+
+commit 2d8b6ef714e4b7aba2773ffe2a717c2aa3ccdd86
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun Jun 5 16:15:30 2022 +0100
+
+    Meeting log from 5 Jun 2022 // Timeline update to include 7 Sprints for the software development post midterm // 19 June 2022 deadline added to objectives for edits to the Requirements
+
+commit 470b65675e0f3b8c43485a84299fa9d343730e32
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Sun Jun 5 14:53:28 2022 +0100
+
+    Uploading
+
+commit aec2ea345b806200e3b641302c241ac05cfccd01
+Author: Connor King <connor1king@me.com>
+Date:   Sat Jun 4 12:27:31 2022 +0100
+
+    Wireframes uploaded by Connor // Admin file added to hold the midterm question paper and other admin from UoL // Further work on the Requirments files needed for the midterm
+
+commit af2b74477f60b5eacb22c6bb86b4205580955acb
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun May 29 16:27:28 2022 +0100
+
+    Uodated meeting log and timeline following meeting 29 May 22
+
+commit cc3db36ab87cba26229176d729cc8bdae4d44ac2
+Merge: f7fea2b 736ce07
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Sun May 29 16:55:02 2022 +0200
+
+    Merge branch 'main' of https://github.com/benekreng/agile
+
+commit 736ce0711acd0265bc84db50035062b2c534dd0a
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Sun May 29 22:36:14 2022 +0800
+
+    Add files via upload
+
+commit f7fea2b06e8b188ec0f64647e1acf24f21506e6e
+Merge: f616f34 da4ffdf
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Sun May 29 16:35:21 2022 +0200
+
+    Merge branch 'main' of https://github.com/benekreng/agile
+
+commit da4ffdf33b209c08e2691f57af52426b22f33f9b
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Sun May 29 15:26:52 2022 +0100
+
+    Commit to main from KLM
+    
+    Commit to main from KLM
+
+commit f616f34414c6e431ccb0edcd4903e451f8b0ae8f
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Sun May 29 16:14:29 2022 +0200
+
+    Wireframes 1 and 2 and 3
+    
+    Wireframes as PDF
+
+commit 29ee943b9cd053b4c70e1ede4cc2bd0f7943eb1f
+Author: Lasana <54402040+Lasana1@users.noreply.github.com>
+Date:   Sun May 29 15:04:52 2022 +0100
+
+    Create Lasana
+
+commit 55d85e1e11ae90d14db37dae66a9d76a0c47d3a9
+Author: benekreng <mail@benedikt-krengel.de>
+Date:   Sun May 29 15:43:51 2022 +0200
+
+    Requirement Original Text Doc
+
+commit 8ee2b8873d824519a96690b66a1d20dcecdb9437
+Author: kayaba-attribution <63566185+Kayaba-Attribution@users.noreply.github.com>
+Date:   Thu May 26 22:42:20 2022 -0400
+
+    Update README.md
+
+commit 0b14b08df80ee4eebbbd3a472d71b37b3843e6ca
+Merge: 22d475f 612352f
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Thu May 26 22:40:57 2022 -0400
+
+    Merge branch 'main' of https://github.com/benekreng/agile into main
+
+commit 22d475f3d1f2e2fa6c4af11f111d380b39e8547a
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Thu May 26 22:39:19 2022 -0400
+
+    feat: 🔥 SvelteKit Demo 🔥
+
+commit 612352f957ff417a3aa9aa0bf67914a45434cfa4
+Author: Connor King <connor1king@me.com>
+Date:   Thu May 26 21:44:49 2022 +0100
+
+    Updated Requirements documetation [deliverables.md // functional_specifications.md // project_scope.md]
+
+commit 4b9f2f3b7970f4cb75429923378e598079734514
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Wed May 25 22:29:23 2022 +0100
+
+    Delete .DS_Store
+
+commit 8d5df79d3436595ddd7e1a1be2ff81ef5e38dbf6
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Wed May 25 22:29:15 2022 +0100
+
+    Delete .~lock.20220507-Meeting1_Log.docx#
+
+commit 968796af577387eb754ec628d4b825954b9a3bb5
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Wed May 25 22:28:45 2022 +0100
+
+    Delete .DS_Store
+
+commit 122205ddc49e344120331a411677bca6800f9d3a
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Wed May 25 22:28:16 2022 +0100
+
+    Delete .DS_Store
+
+commit 80147fafc7f0d16ae76a91d57c71e44b0ed75bb9
+Author: Connor King <connor1king@me.com>
+Date:   Wed May 25 22:17:26 2022 +0100
+
+    Updated Requirements -> Functional specification
+
+commit 260e74ac80a62175da0e52b9de437842bfcb0260
+Author: Connor King <connor1king@me.com>
+Date:   Wed May 25 21:39:52 2022 +0100
+
+    Pseudocode added
+
+commit dbc7cb26ed96218234f7d5555b3285a88318fdc8
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Wed May 25 17:58:00 2022 +0800
+
+    Delete temp
+
+commit c269ef7c387f809318b09782c8c702dfc613f335
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Wed May 25 17:57:42 2022 +0800
+
+    Add files via upload
+
+commit 786a9f5e75a4ab7b07811200dbfa054ecf441210
+Author: Kapthas59 <68538834+Kapthas59@users.noreply.github.com>
+Date:   Wed May 25 17:57:19 2022 +0800
+
+    Create temp
+
+commit 2ede6108037e74ea4472be7ee57405e3bafe980e
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Mon May 23 22:31:47 2022 +0100
+
+    Delete .DS_Store
+
+commit ae957b15a44abb4ff11f9ea65908929b11b59071
+Author: Connor King <connor1king@me.com>
+Date:   Mon May 23 22:25:50 2022 +0100
+
+    Updated requirements files with template data
+
+commit 5911ec7a952c04a722aab08b646d8740a846f7e7
+Author: Connor King <connor1king@me.com>
+Date:   Mon May 23 21:56:29 2022 +0100
+
+    Added draft requirements information found on the ASP from the past midterm
+
+commit bbf23af9fe9a99fc73d0c24cf9390c9ba14e30b4
+Author: Connor King <connor1king@me.com>
+Date:   Mon May 23 15:39:17 2022 +0100
+
+    initial pseudocode code
+
+commit b533b0aca649b545dd5d52c46967f94e84c6cf3e
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun May 22 19:46:58 2022 +0100
+
+    Added placemat for missing meeting log for meeting 2
+
+commit 4c0dbc6d07bdc986a6d1968489bd639bb05b4008
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun May 22 19:43:16 2022 +0100
+
+    Updated team meeting notes for 22 May
+
+commit 96d1acaaa3be79db1b15c9cd8ad459ce1ff79cf3
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun May 22 19:18:35 2022 +0100
+
+    Timeline updated following team meeting 3 on 22 may 22
+
+commit 13d20ae5aee1c25448ff8c5f5488ac69727f7e6b
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sun May 22 10:31:22 2022 -0400
+
+    feat: Meeting 1 from docx to md
+
+commit 70799097c34aac2cc85c369dac2dc3aae0be480c
+Author: Kayaba Attribution <jdavidgomezca@gmail.com>
+Date:   Sun May 22 10:24:24 2022 -0400
+
+    feat: Update Readme
+
+commit c85e83132a01da51f14975382fdda7393722cdbf
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Sun May 22 14:45:25 2022 +0100
+
+    Add files via upload
+
+commit 800e46e8116fc89702c93ca81665d3ce3d1ad068
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun May 22 14:33:12 2022 +0100
+
+    New fil structure added and requirements inputted
+
+commit 393f5cab3d9cac7035346aee450a6cb7e83e8458
+Author: TheBigMahooney <connor1king@me.com>
+Date:   Sun May 22 14:06:51 2022 +0100
+
+    File structure added
+
+commit d5a22353ae1733a7adb24ef54469eb137584d2dd
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Thu May 12 13:43:01 2022 +0100
+
+    Project Timeline
+
+commit b7ec49513ff0a58f0b519b83b618555e1ebd0b44
+Author: TheBigMahooney <65045964+TheBigMahooney@users.noreply.github.com>
+Date:   Thu May 12 13:40:47 2022 +0100
+
+    Meeting 1 notes
+
+commit 89d63d3bc674f06a06ce6874afb7a651ad971084
+Author: benekreng <74617304+benekreng@users.noreply.github.com>
+Date:   Sat May 7 18:37:03 2022 +0200
+
+    Initial commit
