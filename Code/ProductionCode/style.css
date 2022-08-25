@@ -358,6 +358,10 @@ canvas {
     content: url(images/CrossButtonLight.png);
 }
 
+#close-options:hover {
+    content: url(images/CrossButtonDark.png);
+}
+
 #cross, #info-cross {
     display: none;
 }
@@ -415,6 +419,13 @@ nav {
     transition: left 0.75s, box-shadow 0.75s;
 }
 
+#close-options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+}
+
 #options {
     display: none;
 
@@ -432,19 +443,19 @@ nav {
 }
 
 #lineChartBtn {
-    display:none;
+    display: none;
 }
 
 #barChartBtn {
-    display:none;
+    display: none;
 }
 
 #doughnutChartBtn {
-    display:none;
+    display: none;
 }
 
 #polarChartBtn{
-    display:none;
+    display: none;
 }
 
 /*

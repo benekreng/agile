@@ -69,9 +69,16 @@ function populateExtraMenu(){
     let button = document.createElement('button');
     button.innerText = "Generate Graphs"
     button.classList.add("basic-btn");
-    button.id = "generateUserGraphs"
+    button.id = "generateUserGraphs";
     button.onclick = generateUserGraphs;
     optionsArea.append(button);
+    
+    let closeButton = document.createElement('img');
+    closeButton.classList.add("navbutton");
+    closeButton.id = "close-options";
+    closeButton.onclick = populateExtraMenu;
+    closeButton.src = "images/CrossButtonLight.png";
+    optionsArea.append(closeButton);
 
     // console.log("titles", titles);
     // console.log("user data", userData);
