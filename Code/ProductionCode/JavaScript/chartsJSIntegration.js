@@ -90,8 +90,8 @@ function generateUserGraphs(){
     indexesChecked = []
 
     // start at index 1 to avoid the OPTIONS title bar
-    // finish -1 to avoid the generate graphs button
-    for(var i = 1; i < children.length -1 ; i++){
+    // finish -2 to avoid the generate graphs button and close btn
+    for(var i = 1; i < children.length -2 ; i++){
         let child = children[i];
 
         let checkbox = document.getElementById(child.children[0].id)
