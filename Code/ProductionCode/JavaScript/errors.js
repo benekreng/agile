@@ -7,7 +7,6 @@ function displayError(status) {
 
 //https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onerror
 window.onerror = function (msg, url, lineNo, columnNo, error) {
-    console.log("eRr run")
     const string = msg.toLowerCase();
     const substring = 'script error';
     
