@@ -8,7 +8,7 @@ const navBar3 = document.getElementById("navBar3");
 dropDownMenu.addEventListener("change", function(e) {
     
     if (dropDownMenu.value == "Pre_Loaded_Data") {
-        navBar1.style.backgroundColor = "red"
+        navBar1.style.backgroundColor = "grey"
         
         // remove elemnts that aren't appropriate to pre-loaded data
         document.getElementById("fileBrowser").style.display = "none";
