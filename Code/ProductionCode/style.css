@@ -59,7 +59,7 @@ header {
 }
 
 #info-menu {
-    right: -675px;
+    right: 0px;
     transition: right 0.75s;
     box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.2);
     padding: 20px;
@@ -362,7 +362,15 @@ canvas {
     content: url(images/CrossButtonDark.png);
 }
 
-#cross, #info-cross {
+#info {
+    display: none;
+}
+
+#info-cross {
+    display: block;
+}
+
+#cross {
     display: none;
 }
 
