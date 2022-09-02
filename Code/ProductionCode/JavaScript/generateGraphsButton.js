@@ -24,7 +24,8 @@ generateGraphsButton.addEventListener("click", function(e){
     document.getElementById("lineChartBtn").style.display = "block";
     document.getElementById("barChartBtn").style.display = "block";
     document.getElementById("doughnutChartBtn").style.display = "block";
-    document.getElementById("polarChartBtn").style.display = "block";
+    document.getElementById("pieChartBtn").style.display = "block";
+    document.getElementById("bubbleChartBtn").style.display = "block";
 
     // update the navigation bar
     document.getElementById("navBar2").style.backgroundColor = "gray";

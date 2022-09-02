@@ -340,7 +340,6 @@ input[type="submit"]:hover {
 #chartContainer{
     transition: all .7s;
     width: calc(100% - 275px);
-
 }
 
 canvas {
@@ -454,7 +453,11 @@ nav {
     display: none;
 }
 
-#polarChartBtn{
+#pieChartBtn{
+    display: none;
+}
+
+#bubbleChartBtn{
     display: none;
 }
 

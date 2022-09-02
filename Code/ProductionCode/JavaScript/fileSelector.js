@@ -48,7 +48,8 @@ input.addEventListener('change', function(e)
         document.getElementById("lineChartBtn").style.display = "block";
         document.getElementById("barChartBtn").style.display = "block";
         document.getElementById("doughnutChartBtn").style.display = "block";
-        document.getElementById("polarChartBtn").style.display = "block";
+        document.getElementById("pieChartBtn").style.display = "block";
+        document.getElementById("bubbleChartBtn").style.display = "block";
         document.getElementById("randomize").style.display = "block";
 
     }

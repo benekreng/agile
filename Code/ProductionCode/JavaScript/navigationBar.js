@@ -40,7 +40,8 @@ dropDownMenu.addEventListener("change", function(e) {
         document.getElementById("lineChartBtn").style.display = "none";
         document.getElementById("barChartBtn").style.display = "none";
         document.getElementById("doughnutChartBtn").style.display = "none";
-        document.getElementById("polarChartBtn").style.display = "none";
+        document.getElementById("pieChartBtn").style.display = "none";
+        document.getElementById("bubbleChartBtn").style.display = "none";
         document.getElementById("exportGraphicArea").style.display = "none";
 
         // correct navigation bar
