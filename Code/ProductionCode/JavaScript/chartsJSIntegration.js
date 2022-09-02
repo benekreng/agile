@@ -206,7 +206,7 @@ let renderDimensions = (_size) => {
 // updator for chart dimensions
 let updator = {
     responsive: true,
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
     onResize: (_chart, _size) => {
         renderDimensions(_size)
     }

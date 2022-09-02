@@ -340,6 +340,7 @@ input[type="submit"]:hover {
 #chartContainer{
     transition: all .7s;
     width: calc(100% - 275px);
+    height: calc(100% - 80px);
 }
 
 canvas {
