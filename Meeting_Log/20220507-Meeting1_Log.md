@@ -1,6 +1,6 @@
 ### Date: 7 May 22
 ### Meeting type: Initial
-### Attendees: Connor, Ben, Kashka, Sandra
+### Attendees: Connor, Ben, Kashka, Thavelarn
 
 ## Meeting Plan: Group introductions and initial scoping for the project.
 
