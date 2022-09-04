@@ -390,7 +390,10 @@ nav {
     display: flex; 
     border: solid;
     border-color: #548235;
-    transition: display 0.75s;
+    transition: top 0.75s;
+    position: absolute;
+    top: 50px;
+    z-index: -1;
 }
 
 .navigationBarSections {

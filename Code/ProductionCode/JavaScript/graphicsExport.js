@@ -12,15 +12,6 @@ function exportGraphic() {
     document.getElementById("third-phase").style.backgroundColor = "#548235";
     document.getElementById("third-phase").style.borderColor = "#548235";
 
-    // find the export option that the use has selected
-    // let exportOption = document.getElementsByName('dataExport');
-    // for (let x = 0; x < exportOption.length; x++) {
-    //     if(exportOption[x].checked == true) {
-    //         var fileExtension = exportOption[x].value;
-    //         break;
-    //     }
-    // }
-
     let exportOptions = document.getElementById('dataExportOptions');
     var fileExtension = exportOptions.options[exportOptions.selectedIndex].value;
 
@@ -41,7 +32,4 @@ function exportGraphic() {
     document.body.appendChild(dlLink);
     dlLink.click();
     document.body.removeChild(dlLink);
-
 }
-
-

@@ -14,8 +14,8 @@
 // this is made to make the process of changing chart properties easier
 
 // global data for presets
-let mainData = [12, 19, 3, 5, 2, 3]
-let mainLabels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']
+let mainData = [12, 19, 3, 5, 2, 3];
+let mainLabels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
 
 // default is rendered using mainConfig in generateGraphsButton.js
 let mainConfig = {
@@ -81,7 +81,7 @@ function changeChart(_type) {
 }
 
 
-function generateUserGraphs(){
+function generateUserGraphs() {
     console.log("button pressed")
     let optionsArea = document.getElementById('popup');
 
@@ -122,7 +122,7 @@ function generateUserGraphs(){
 
     // TODO Fix the chart.js integration
     //check to see if globalChart is in use and destroy
-    if(globalChart != null){
+    if (globalChart != null) {
         globalChart.destroy();
         console.log("chart destroyed");
     }
@@ -152,8 +152,11 @@ function generateUserGraphs(){
     });
 
     // Update the navigation bar
-    document.getElementById("navBar1").style.backgroundColor = "Red"
-    document.getElementById("navBar2").style.backgroundColor = "Red"
+    document.getElementById("navBar1").style.backgroundColor = "grey";
+    document.getElementById("navBar2").style.backgroundColor = "grey";
+    document.getElementById("second-phase").style.backgroundColor = "#548235";
+    document.getElementById("second-pass").style.color = "#548235";
+    document.getElementById("third-phase").style.borderColor = "#548235";
     
     // display the export option on the layer 1 side menu
     document.getElementById("exportGraphicArea").style.display = "flex";
@@ -211,5 +214,3 @@ let updator = {
         renderDimensions(_size)
     }
 }
-
-

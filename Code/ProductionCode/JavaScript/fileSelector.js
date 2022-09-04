@@ -1,4 +1,3 @@
-
 // Listener on the FILE SELECTOR button 
 // SOURCE https://www.youtube.com/watch?v=-AR-6X_98rM
 const input = document.querySelector('input[type="file"]');

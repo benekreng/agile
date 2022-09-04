@@ -15,11 +15,6 @@ dropDownMenu.addEventListener("change", function(e) {
 
         // add other pre-loaded elements back
         document.getElementById("generateGraphsButton").style.display = "block";
-        // document.getElementById("randomize").style.display = "flex";
-        // document.getElementById("lineChartBtn").style.display = "flex";
-        // document.getElementById("barChartBtn").style.display = "flex";
-        // document.getElementById("doughnutChartBtn").style.display = "flex";
-        // document.getElementById("polarChartBtn").style.display = "flex";
         
         document.getElementById("first-phase").style.backgroundColor = "#548235";
         document.getElementById("first-pass").style.color = "#548235";

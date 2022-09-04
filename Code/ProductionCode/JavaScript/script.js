@@ -1,6 +1,5 @@
-var usePreBuiltData = true
-var loadData = false
-
+var usePreBuiltData = true;
+var loadData = false;
 
 // var loadedData = null; // used in the load file option
 
@@ -17,7 +16,7 @@ function displayMenu() {
     document.getElementById("popup").style.left = "0";
     document.getElementById("chartContainer").style.left = "275px";
     document.getElementById("chartContainer").style.width = "calc(100% - 275px)";
-    document.getElementById("nav").style.display = "none";
+    document.getElementById("nav").style.top = "30px";
 }
 
 // Function for hiding the side menu
@@ -28,7 +27,7 @@ function closeMenu() {
     document.getElementById("popup").style.left = "-275px";
     document.getElementById("chartContainer").style.left = "0px";
     document.getElementById("chartContainer").style.width = "100%";
-    document.getElementById("nav").style.display = "flex";
+    document.getElementById("nav").style.top = "50px";
 }
 
 // Function for displaying the info menu
@@ -49,5 +48,3 @@ function closeInfo() {
 document.querySelector("#userImportButton").onchange = function() {
     document.querySelector("#file-name").textContent = this.files[0].name;
 }
-
-
