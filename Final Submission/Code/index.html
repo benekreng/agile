@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Charting App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/script.js" defer></script>
+    <!-- Load the chart manager script -->
+    <script src="JavaScript/chartsJSIntegration.js"></script>
+    <!-- File parser-->
+    <script src="JavaScript/fileUploadParser.js"></script>
+    <!-- Populate extra menu-->
+    <script src="JavaScript/populateExtraMenu.js"></script>
+
+</head>
+    
+<body>
+    <header>
+        <img class="navbutton" id="bars" onclick="displayMenu()" src="images/MenuButtonDark.png" alt="Show Menu">
+        <img class="navbutton" id="cross" onclick="closeMenu()" src="images/CrossButtonDark.png" alt="Close Menu">
+        <div class="title">Chart App</div>
+        <img class="navbutton" id="info" onclick="displayInfo()" src="images/InfoButtonDark.png" alt="Show Menu">
+        <img class="navbutton" id="info-cross" onclick="closeInfo()" src="images/CrossButtonDark.png" alt="Close Menu">
+    </header>
+    
+    <!--First Phase-->
+    <div id="menu">
+        <div class="progress-bar">
+            <div id="first-phase"></div>
+            <div id="first-pass">--------</div>
+            <div id="second-phase"></div>
+            <div id="second-pass">--------</div>
+            <div id="third-phase"></div>
+        </div>
+
+        <div class="phase-menu" id="phaseMenu">
+            
+            <div class="phase-title">LOAD DATA</div>
+
+            <select name="type" id="dataSelectorDropDown">
+                <option value="Pre_Loaded_Data" selected>Pre loaded data</option>
+                <option id="Option2" value="Data_From_File">Data from File</option>
+            </select>
+            
+            <label class="fileBrowser" for="userImportButton" id="fileBrowser">
+                <div id="file-name">No file uploaded</div>
+                <img id="file" src="images/FileButtonLight.png" alt="File Icon">
+                <!-- <input type="file" id="userImportButton" name="filename"> -->
+                <input type="file" id="userImportButton" name="userImportButton" accept=".csv">
+            </label>
+
+            <button id="generateGraphsButton" class="basic-btn">Generate Graphs</button>
+            <div>   </div>
+            <!-- Functions that change the data (should be hidden until the chart is created) -->
+            <button id="options" onclick="populateExtraMenu()" class="basic-btn">Select Options</button>
+            <div>  </div>
+            <button id="randomize" onclick="randomize()" class="basic-btn">Randomize Data</button>
+            <button id="lineChartBtn" onclick="changeChart('line')" class="basic-btn">Line Chart</button>
+            <button id="barChartBtn" onclick="changeChart('bar')" class="basic-btn">Bar Chart</button>
+            <button id="doughnutChartBtn" onclick="changeChart('doughnut')" class="basic-btn">Doughnut Chart</button>
+            <button id="pieChartBtn" onclick="changeChart('pie')" class="basic-btn">Pie Chart</button>
+            <button id="bubbleChartBtn" onclick="changeChart('bubble')" class="basic-btn">Bubble Chart</button>
+            
+            <div id="exportGraphicArea">
+                <!-- Data Export options -->
+
+                <select name="type" id="dataExportOptions">
+                    <option value="png" selected="selected">PNG</option>
+                    <option value="jpeg">JPEG</option>
+                </select>
+
+                <button onclick="exportGraphic()" class="basic-btn">Export Graphic</button>
+            </div>
+        </div>
+
+        <!-- Extra options windows -->
+        <div id="popup" >
+            <!-- Dynamic render on populateExtraMenu.js -->
+        </div>
+
+    </div>
+    
+    <!-- Side menu area -->
+    <div id="info-menu">
+        <p>This is a project created for the UoL CM2020 ASP module as part of the CS BSc.</p>
+        <p>The following outlines how the system works ...</p>
+        <ol>
+            <li><b>Stage 1.</b> The first phase is clicking the menu button at the top left</li>
+            <img src="images/HelpMenu-Stage1.png" style="width:100%" alt="Picture shows what the comment at the top describes">
+
+            <li><b>Stage 2.</b> Select what data source will be used for generating graphics by clicking on pre load data button</li>
+            <img src="images/HelpMenu-Stage2.png" style="width:100%" alt="Picture shows what the comment at the top describes">
+
+            <li><b>Stage 3.</b> Upload file</li>
+            <img src="images/HelpMenu-Stage3.png" style="width:100%" alt="Picture shows what the comment at the top describes">
+
+            <li><b>Stage 4.</b> Select relevant files by clicking on the options Button </li>
+            <img src="images/HelpMenu-Stage4.png" style="width:100%" alt="Picture shows what the comment at the top describes">
+
+            <li><b>Stage 5.</b> Generate graph</li>
+            <img src="images/HelpMenu-Stage5.png" style="width:100%" alt="Picture shows what the comment at the top describes">
+
+            <li><b>Stage 6.</b> Choose export type and export graphic</li>
+            <img src="images/HelpMenu-Stage6.png" style="width:100%" alt="Picture shows what the comment at the top describes">
+
+        </ol>
+        <!--Insert info here-->
+    </div>
+    
+    <div id="dimesions">
+        <p id="dimesionsText"></p>
+    </div>
+
+    <!-- Errors display -->
+    <div id="customLog">
+        <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayCustomError(false)" src="images/CrossButtonDark.png" alt="customLog close button">
+        <p id="customLogText"></p>
+    </div>
+
+    <div id="log">
+        <img style="width: 25px; height: 25px; margin-right: 5px;" onclick="displayError(false)" src="images/CrossButtonDark.png" alt="log close button">
+        <p id="logText"></p>
+    </div>
+
+    <!-- Status bar -->
+    <nav id="nav">
+        <div id="navBar1" class="navigationBarSections" ></div>
+        <div id="navBar2" class="navigationBarSections" ></div>
+        <div id="navBar3" class="navigationBarSections" ></div>
+    </nav>
+
+    <div id="chartContainer" style="position: relative; padding: 4rem;">
+        <canvas id="chart" ></canvas>
+    </div>
+
+
+
+    <!-- Import ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Navigation Bar at the top of the page showing 3 stages-->
+    <script src="JavaScript/navigationBar.js"></script>
+    <!-- File Selector -->
+    <script src="JavaScript/fileSelector.js"></script>
+    <!-- Generate Graphs button for pre-loaded data-->
+    <script src="JavaScript/generateGraphsButton.js"></script>
+    <!-- Generate Graphs button for user loaded data-->
+    <script src="JavaScript/errors.js"></script>
+    <!-- Graphic Export -->
+    <script src="JavaScript/graphicsExport.js"></script>
+
+</body>
+
+</html>
